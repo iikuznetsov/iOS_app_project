@@ -2,8 +2,7 @@
 //  AppDelegate.swift
 //  iOS_app_project
 //
-//  Created by Игорь Кузнецов on 08/12/2019.
-//  Copyright © 2019 Игорь Кузнецов. All rights reserved.
+//  Created by Team Курганский Максим, Москвичёва Полина, Мария Караваева, Анастасия Стручкова, Максим Оленёв, Кузнецов Игорь, Корнеев Георгий
 //
 
 import UIKit
