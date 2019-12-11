@@ -15,6 +15,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func enterButtonAction(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "goToLoginPage", sender: self)
+    }
+    
 }
 

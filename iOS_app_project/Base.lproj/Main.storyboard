@@ -51,7 +51,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="u0Y-sl-xLL" kind="show" id="u6a-oj-ERH"/>
+                                            <action selector="enterButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VYk-7N-dtX"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Db9-MG-xA3">
@@ -75,15 +75,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="TUg-Bw-bmD"/>
+                    <connections>
+                        <segue destination="u0Y-sl-xLL" kind="show" identifier="goToLoginPage" id="1xh-Nc-HYO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="298.55072463768118" y="257.8125"/>
         </scene>
-        <!--View Controller-->
+        <!--Login Page View Controller-->
         <scene sceneID="hjn-GF-8CF">
             <objects>
-                <viewController id="u0Y-sl-xLL" sceneMemberID="viewController">
+                <viewController id="u0Y-sl-xLL" userLabel="Login Page View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jqG-wM-tC6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -158,7 +161,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1C5-wZ-q5W">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1C5-wZ-q5W">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="443"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
@@ -182,18 +185,18 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="W62-8f-pXB">
-                                        <rect key="frame" x="0.0" y="234" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="234" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W62-8f-pXB" id="EUh-ga-SrS">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="3yJ-x4-C7u">
-                                        <rect key="frame" x="0.0" y="278" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="277.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3yJ-x4-C7u" id="Sou-1U-erk">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -204,6 +207,7 @@
                         <constraints>
                             <constraint firstItem="1C5-wZ-q5W" firstAttribute="leading" secondItem="zLh-5X-lQv" secondAttribute="leading" id="C6v-Qb-uWG"/>
                             <constraint firstItem="1C5-wZ-q5W" firstAttribute="trailing" secondItem="zLh-5X-lQv" secondAttribute="trailing" id="EHs-As-Zas"/>
+                            <constraint firstItem="zLh-5X-lQv" firstAttribute="bottom" secondItem="1C5-wZ-q5W" secondAttribute="bottom" constant="316" id="pfz-KE-m6Y"/>
                             <constraint firstItem="1C5-wZ-q5W" firstAttribute="top" secondItem="zLh-5X-lQv" secondAttribute="top" id="r3r-52-sjf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zLh-5X-lQv"/>
