@@ -22,6 +22,7 @@
 		210EC1C623A2335C0031045D /* icon152.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 210EC19223A2335C0031045D /* icon152.jpg */; };
 		210EC1C723A2335C0031045D /* icon20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 210EC19323A2335C0031045D /* icon20.jpg */; };
 		210EC1CE23A2335C0031045D /* icon180.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 210EC19A23A2335C0031045D /* icon180.jpg */; };
+		210EC1D023A234F40031045D /* Лого.png in Resources */ = {isa = PBXBuildFile; fileRef = 210EC1CF23A234F40031045D /* Лого.png */; };
 		52375E89239C69F40083EAB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52375E88239C69F40083EAB9 /* AppDelegate.swift */; };
 		52375E8B239C69F40083EAB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52375E8A239C69F40083EAB9 /* SceneDelegate.swift */; };
 		52375E8D239C69F40083EAB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52375E8C239C69F40083EAB9 /* ViewController.swift */; };
@@ -47,6 +48,7 @@
 		210EC19223A2335C0031045D /* icon152.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon152.jpg; sourceTree = "<group>"; };
 		210EC19323A2335C0031045D /* icon20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon20.jpg; sourceTree = "<group>"; };
 		210EC19A23A2335C0031045D /* icon180.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon180.jpg; sourceTree = "<group>"; };
+		210EC1CF23A234F40031045D /* Лого.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Лого.png"; sourceTree = "<group>"; };
 		52375E85239C69F40083EAB9 /* FreeModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52375E88239C69F40083EAB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52375E8A239C69F40083EAB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 		210EC15D23A225190031045D /* Pics */ = {
 			isa = PBXGroup;
 			children = (
+				210EC1CF23A234F40031045D /* Лого.png */,
 				210EC15E23A225370031045D /* Фон копия.jpg */,
 			);
 			path = Pics;
@@ -198,6 +201,7 @@
 				52375E90239C69F40083EAB9 /* Main.storyboard in Resources */,
 				210EC1BB23A2335C0031045D /* icon80.jpg in Resources */,
 				210EC1AB23A2335C0031045D /* icon60.jpg in Resources */,
+				210EC1D023A234F40031045D /* Лого.png in Resources */,
 				210EC1B623A2335C0031045D /* icon40.jpg in Resources */,
 				210EC1C723A2335C0031045D /* icon20.jpg in Resources */,
 				210EC1C223A2335C0031045D /* icon87.jpg in Resources */,
