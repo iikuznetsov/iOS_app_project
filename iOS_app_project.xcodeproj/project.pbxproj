@@ -126,7 +126,6 @@
 				210EC12923A224400031045D /* icon58 copy 2.jpg */,
 			);
 			name = Icons;
-			path = "../../../Desktop/Разработка/Дизайн/Icons";
 			sourceTree = "<group>";
 		};
 		210EC15D23A225190031045D /* Pics */ = {
