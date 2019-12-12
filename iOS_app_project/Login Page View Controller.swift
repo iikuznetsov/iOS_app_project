@@ -14,7 +14,7 @@ class LoginPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Фон копия.jpg")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Pink.jpg")!)
         // Do any additional setup after loading th
     }
 }

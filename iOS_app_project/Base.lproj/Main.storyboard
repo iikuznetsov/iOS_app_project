@@ -11,78 +11,128 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOS_app_project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FreeModel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Лого.png" translatesAutoresizingMaskIntoConstraints="NO" id="YQn-Zr-kdc">
-                                <rect key="frame" x="0.0" y="258" width="414" height="381"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Лого.png" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YQn-Zr-kdc">
+                                <rect key="frame" x="0.0" y="257" width="414" height="381"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="381" id="VOI-bY-tNX"/>
+                                    <constraint firstAttribute="width" secondItem="YQn-Zr-kdc" secondAttribute="height" multiplier="138:127" id="Yyk-p1-ek9"/>
+                                    <constraint firstAttribute="width" constant="414" id="h0a-BD-36p"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47B-Pc-jnO">
-                                <rect key="frame" x="50" y="125" width="314" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Добро пожаловать!">
-                                        <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                            <font key="NSFont" size="50" name="DINCondensed-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEt-nw-SVg">
-                                <rect key="frame" x="89" y="183" width="236" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Мы рады вас видеть.">
-                                        <attributes>
-                                            <font key="NSFont" size="25" name="GillSans"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w7S-WG-5YH">
-                                <rect key="frame" x="103" y="675" width="205" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="Войти в аккаунт">
-                                            <attributes>
-                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="35" name="DINCondensed-Bold"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                                <connections>
-                                    <action selector="enterButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VYk-7N-dtX"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Db9-MG-xA3">
-                                <rect key="frame" x="41" y="753" width="333" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="У вас нет аккаунта? Создайте его, нажав сюда.">
-                                            <attributes>
-                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                <font key="NSFont" size="17" name="GillSans"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
-                                </state>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vxq-IZ-HeA">
+                                <rect key="frame" x="50" y="125" width="314" height="84"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47B-Pc-jnO">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="OLf-Gh-NT1"/>
+                                            <constraint firstAttribute="width" constant="314" id="xDN-BC-y8G"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Добро пожаловать!">
+                                                <attributes>
+                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                    <font key="NSFont" size="50" name="DINCondensed-Bold"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    <shadow key="NSShadow">
+                                                        <size key="offset" width="3.8270212473354788e-16" height="6.25"/>
+                                                        <color key="color" red="0.0" green="0.0" blue="0.0" alpha="0.12513469827586207" colorSpace="calibratedRGB"/>
+                                                    </shadow>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEt-nw-SVg">
+                                        <rect key="frame" x="39" y="50" width="236" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="Sfx-i4-xS7"/>
+                                            <constraint firstAttribute="width" constant="236" id="tM9-uc-cF1"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Мы рады вас видеть.">
+                                                <attributes>
+                                                    <font key="NSFont" size="25" name="GillSans"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="314" id="3PW-rE-mir"/>
+                                    <constraint firstAttribute="width" secondItem="vxq-IZ-HeA" secondAttribute="height" multiplier="157:42" id="Uln-hh-e11"/>
+                                    <constraint firstAttribute="height" constant="84" id="cm7-bA-MFg"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8d5-zE-h7B">
+                                <rect key="frame" x="40.5" y="675" width="333" height="110"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w7S-WG-5YH">
+                                        <rect key="frame" x="64" y="0.0" width="205" height="68"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="205" id="XVh-ZV-0cN"/>
+                                            <constraint firstAttribute="height" constant="68" id="xAH-Ek-bWc"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Войти в аккаунт">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="35" name="DINCondensed-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <connections>
+                                            <action selector="enterButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VYk-7N-dtX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Db9-MG-xA3">
+                                        <rect key="frame" x="0.0" y="78" width="333" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="333" id="8r3-qP-7jJ"/>
+                                            <constraint firstAttribute="height" constant="32" id="q0t-lK-mYR"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="У вас нет аккаунта? Создайте его, нажав сюда.">
+                                                    <attributes>
+                                                        <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                        <font key="NSFont" size="17" name="GillSans"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="Bfu-xV-AL6"/>
+                                    <constraint firstAttribute="width" constant="333" id="l0r-vO-e9D"/>
+                                    <constraint firstAttribute="width" secondItem="8d5-zE-h7B" secondAttribute="height" multiplier="333:110" id="wrD-N0-IFv"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="YQn-Zr-kdc" firstAttribute="top" secondItem="vxq-IZ-HeA" secondAttribute="bottom" constant="48" id="7Jz-OK-pEF"/>
+                            <constraint firstItem="YQn-Zr-kdc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8e1-Hr-0XC"/>
+                            <constraint firstItem="vxq-IZ-HeA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EJQ-6I-Qdc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8d5-zE-h7B" secondAttribute="bottom" constant="77" id="I7R-Ni-nWe"/>
+                            <constraint firstItem="8d5-zE-h7B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nyj-QC-o6A"/>
+                            <constraint firstItem="8d5-zE-h7B" firstAttribute="top" secondItem="YQn-Zr-kdc" secondAttribute="bottom" constant="37" id="uWa-mv-WZV"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="TUg-Bw-bmD"/>
@@ -97,64 +147,103 @@
         <!--Login Page View Controller-->
         <scene sceneID="hjn-GF-8CF">
             <objects>
-                <viewController id="u0Y-sl-xLL" userLabel="Login Page View Controller" customClass="LoginPageViewController" customModule="iOS_app_project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="u0Y-sl-xLL" userLabel="Login Page View Controller" customClass="LoginPageViewController" customModule="FreeModel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jqG-wM-tC6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="xj2-IL-bJS">
-                                <rect key="frame" x="60" y="244" width="294" height="191"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dgy-DZ-aWq">
+                                <rect key="frame" x="142" y="423" width="130" height="60"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="DwP-zW-Zej"/>
+                                    <constraint firstAttribute="height" constant="60" id="tF8-7Y-C1d"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Войти">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="35" name="DINCondensed-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="hBH-9Z-nJv" kind="presentation" id="rMN-tj-YTE"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cyz-dY-ci6">
+                                <rect key="frame" x="149" y="495" width="116" height="51"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Почта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="24S-Ii-Fia">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="STn-OX-0Eb">
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="jGF-pz-98h"/>
+                                            <constraint firstAttribute="width" constant="116" id="wPl-vm-FL9"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Забыли пароль?">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="17" name="GillSans"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ohv-mw-aDp">
+                                        <rect key="frame" x="0.0" y="25" width="116" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="116" id="FYU-fi-FNn"/>
+                                            <constraint firstAttribute="height" constant="26" id="dFU-Hl-R9r"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Регистрация">
+                                                    <attributes>
+                                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="17" name="GillSans"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="J4l-3I-w2y">
+                                <rect key="frame" x="60" y="316" width="294" height="82"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Почта" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="24S-Ii-Fia">
                                         <rect key="frame" x="0.0" y="0.0" width="294" height="34"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="34" id="6V1-pg-oja"/>
-                                            <constraint firstAttribute="width" constant="294" id="aPY-SB-W0x"/>
+                                            <constraint firstAttribute="height" constant="34" id="6be-gP-aCO"/>
+                                            <constraint firstAttribute="width" constant="294" id="eF9-Ws-7QT"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <attributedString key="attributedText"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" keyboardAppearance="light" textContentType="email"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Пароль" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="teh-EA-WBa">
+                                        <rect key="frame" x="0.0" y="48" width="294" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="gQB-u0-d31"/>
+                                            <constraint firstAttribute="width" constant="294" id="grf-VQ-AW4"/>
+                                        </constraints>
+                                        <attributedString key="attributedText"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="teh-EA-WBa">
-                                        <rect key="frame" x="0.0" y="51" width="294" height="34"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="294" id="7e8-V4-3Oe"/>
-                                            <constraint firstAttribute="height" constant="34" id="sY6-w0-VJV"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgy-DZ-aWq">
-                                        <rect key="frame" x="112" y="102" width="70" height="42"/>
-                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="42" id="eKT-FL-tf7"/>
-                                            <constraint firstAttribute="width" constant="70" id="iey-Rl-wbn"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="Войти">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="hBH-9Z-nJv" kind="presentation" id="rMN-tj-YTE"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="STn-OX-0Eb">
-                                        <rect key="frame" x="89" y="161" width="116" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="116" id="7x0-Il-377"/>
-                                            <constraint firstAttribute="height" constant="30" id="f84-LL-wMT"/>
-                                        </constraints>
-                                        <state key="normal" title="Забыли пароль?">
-                                            <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="xj2-IL-bJS" firstAttribute="top" secondItem="heS-gS-U4L" secondAttribute="top" constant="200" id="EpI-gZ-MzC"/>
-                            <constraint firstItem="xj2-IL-bJS" firstAttribute="centerX" secondItem="jqG-wM-tC6" secondAttribute="centerX" id="k3O-Zk-Ndw"/>
+                            <constraint firstItem="Dgy-DZ-aWq" firstAttribute="centerX" secondItem="heS-gS-U4L" secondAttribute="centerX" id="8OX-YF-dpo"/>
+                            <constraint firstItem="cyz-dY-ci6" firstAttribute="top" secondItem="Dgy-DZ-aWq" secondAttribute="bottom" constant="12" id="Ftb-V9-udQ"/>
+                            <constraint firstItem="STn-OX-0Eb" firstAttribute="centerX" secondItem="heS-gS-U4L" secondAttribute="centerX" id="VIw-Fm-5pL"/>
+                            <constraint firstItem="Dgy-DZ-aWq" firstAttribute="centerY" secondItem="heS-gS-U4L" secondAttribute="centerY" id="ZMh-iI-G2u"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="heS-gS-U4L"/>
                     </view>
