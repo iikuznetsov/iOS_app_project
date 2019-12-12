@@ -12,12 +12,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Фон копия.jpg")!)
         // Do any additional setup after loading th
     }
 
     @IBAction func enterButtonAction(_ sender: UIButton) {
         self.performSegue(withIdentifier: "goToLoginPage", sender: self)
     }
-    
 }
-

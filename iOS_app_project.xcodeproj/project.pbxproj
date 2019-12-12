@@ -33,6 +33,8 @@
 		210EC15A23A224410031045D /* icon29 copy 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 210EC14023A224410031045D /* icon29 copy 3.jpg */; };
 		210EC15B23A224410031045D /* icon152 copy 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 210EC14123A224410031045D /* icon152 copy 3.jpg */; };
 		210EC15C23A224410031045D /* icon76 copy 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 210EC14223A224410031045D /* icon76 copy 3.jpg */; };
+		210EC15F23A225370031045D /* Фон копия.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 210EC15E23A225370031045D /* Фон копия.jpg */; };
+		210EC16523A22F850031045D /* Login Page View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210EC16423A22F850031045D /* Login Page View Controller.swift */; };
 		52375E89239C69F40083EAB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52375E88239C69F40083EAB9 /* AppDelegate.swift */; };
 		52375E8B239C69F40083EAB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52375E8A239C69F40083EAB9 /* SceneDelegate.swift */; };
 		52375E8D239C69F40083EAB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52375E8C239C69F40083EAB9 /* ViewController.swift */; };
@@ -69,7 +71,9 @@
 		210EC14023A224410031045D /* icon29 copy 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "icon29 copy 3.jpg"; sourceTree = "<group>"; };
 		210EC14123A224410031045D /* icon152 copy 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "icon152 copy 3.jpg"; sourceTree = "<group>"; };
 		210EC14223A224410031045D /* icon76 copy 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "icon76 copy 3.jpg"; sourceTree = "<group>"; };
-		52375E85239C69F40083EAB9 /* iOS_app_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_app_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		210EC15E23A225370031045D /* Фон копия.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Фон копия.jpg"; sourceTree = "<group>"; };
+		210EC16423A22F850031045D /* Login Page View Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login Page View Controller.swift"; sourceTree = "<group>"; };
+		52375E85239C69F40083EAB9 /* FreeModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52375E88239C69F40083EAB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52375E8A239C69F40083EAB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		52375E8C239C69F40083EAB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +129,14 @@
 			path = "../../../Desktop/Разработка/Дизайн/Icons";
 			sourceTree = "<group>";
 		};
+		210EC15D23A225190031045D /* Pics */ = {
+			isa = PBXGroup;
+			children = (
+				210EC15E23A225370031045D /* Фон копия.jpg */,
+			);
+			path = Pics;
+			sourceTree = "<group>";
+		};
 		52375E7C239C69F40083EAB9 = {
 			isa = PBXGroup;
 			children = (
@@ -136,7 +148,7 @@
 		52375E86239C69F40083EAB9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				52375E85239C69F40083EAB9 /* iOS_app_project.app */,
+				52375E85239C69F40083EAB9 /* FreeModel.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,8 +156,10 @@
 		52375E87239C69F40083EAB9 /* iOS_app_project */ = {
 			isa = PBXGroup;
 			children = (
+				210EC15D23A225190031045D /* Pics */,
 				210EC12823A224220031045D /* Icons */,
 				52375E88239C69F40083EAB9 /* AppDelegate.swift */,
+				210EC16423A22F850031045D /* Login Page View Controller.swift */,
 				52375E8A239C69F40083EAB9 /* SceneDelegate.swift */,
 				52375E8C239C69F40083EAB9 /* ViewController.swift */,
 				52375E8E239C69F40083EAB9 /* Main.storyboard */,
@@ -174,7 +188,7 @@
 			);
 			name = iOS_app_project;
 			productName = iOS_app_project;
-			productReference = 52375E85239C69F40083EAB9 /* iOS_app_project.app */;
+			productReference = 52375E85239C69F40083EAB9 /* FreeModel.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -242,6 +256,7 @@
 				210EC14823A224410031045D /* icon58 copy 3.jpg in Resources */,
 				210EC15223A224410031045D /* icon80 copy 2.jpg in Resources */,
 				210EC15423A224410031045D /* icon167 copy 3.jpg in Resources */,
+				210EC15F23A225370031045D /* Фон копия.jpg in Resources */,
 				210EC14423A224410031045D /* icon120 copy 2.jpg in Resources */,
 				210EC15623A224410031045D /* icon40 copy 3.jpg in Resources */,
 			);
@@ -257,6 +272,7 @@
 				52375E8D239C69F40083EAB9 /* ViewController.swift in Sources */,
 				52375E93239C69F40083EAB9 /* iOS_app_project.xcdatamodeld in Sources */,
 				52375E89239C69F40083EAB9 /* AppDelegate.swift in Sources */,
+				210EC16523A22F850031045D /* Login Page View Controller.swift in Sources */,
 				52375E8B239C69F40083EAB9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,7 +425,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Igor.iOS-app-project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FreeModel;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -427,7 +443,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Igor.iOS-app-project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FreeModel;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
