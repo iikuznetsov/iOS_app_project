@@ -17,4 +17,10 @@ class LoginPageViewController: UIViewController {
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Pink.jpg")!)
         // Do any additional setup after loading th
     }
+    
+    @IBAction func goToRegPageAction(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "goToRegPage", sender: self)
+    }
+    
+    
 }
