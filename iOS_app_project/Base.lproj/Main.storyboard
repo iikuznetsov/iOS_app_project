@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IS1-hO-4go">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IS1-hO-4go">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -157,6 +157,7 @@
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="DwP-zW-Zej"/>
+                                    <constraint firstAttribute="width" secondItem="Dgy-DZ-aWq" secondAttribute="height" multiplier="13:6" id="E59-ye-ZIv"/>
                                     <constraint firstAttribute="height" constant="60" id="tF8-7Y-C1d"/>
                                 </constraints>
                                 <state key="normal">
@@ -216,8 +217,11 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cyz-dY-ci6" secondAttribute="height" multiplier="116:51" id="kve-B4-rWT"/>
+                                </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="J4l-3I-w2y">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="J4l-3I-w2y">
                                 <rect key="frame" x="60" y="316" width="294" height="82"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Почта" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="24S-Ii-Fia">
@@ -239,6 +243,9 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="J4l-3I-w2y" secondAttribute="height" multiplier="147:41" id="C0E-cp-2Tt"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -247,6 +254,8 @@
                             <constraint firstItem="cyz-dY-ci6" firstAttribute="top" secondItem="Dgy-DZ-aWq" secondAttribute="bottom" constant="12" id="Ftb-V9-udQ"/>
                             <constraint firstItem="STn-OX-0Eb" firstAttribute="centerX" secondItem="heS-gS-U4L" secondAttribute="centerX" id="VIw-Fm-5pL"/>
                             <constraint firstItem="Dgy-DZ-aWq" firstAttribute="centerY" secondItem="heS-gS-U4L" secondAttribute="centerY" id="ZMh-iI-G2u"/>
+                            <constraint firstItem="J4l-3I-w2y" firstAttribute="centerX" secondItem="Dgy-DZ-aWq" secondAttribute="centerX" id="gBs-sT-bgm"/>
+                            <constraint firstItem="J4l-3I-w2y" firstAttribute="top" secondItem="heS-gS-U4L" secondAttribute="top" constant="272" id="mxt-br-3lq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="heS-gS-U4L"/>
                     </view>
