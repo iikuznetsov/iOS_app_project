@@ -28,6 +28,7 @@
 		213516EB23A2AB220046AC75 /* Purple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 213516E623A2AB220046AC75 /* Purple.jpg */; };
 		213516EC23A2AB220046AC75 /* Blue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 213516E723A2AB220046AC75 /* Blue.jpg */; };
 		213516EF23A2AB840046AC75 /* Pink.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 213516EE23A2AB840046AC75 /* Pink.jpg */; };
+		21E3D28A23A7B65C003C317C /* Registration Page View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E3D28923A7B65C003C317C /* Registration Page View Controller.swift */; };
 		52375E89239C69F40083EAB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52375E88239C69F40083EAB9 /* AppDelegate.swift */; };
 		52375E8B239C69F40083EAB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52375E8A239C69F40083EAB9 /* SceneDelegate.swift */; };
 		52375E8D239C69F40083EAB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52375E8C239C69F40083EAB9 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 		52375E93239C69F40083EAB9 /* iOS_app_project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52375E91239C69F40083EAB9 /* iOS_app_project.xcdatamodeld */; };
 		52375E95239C6A060083EAB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52375E94239C6A060083EAB9 /* Assets.xcassets */; };
 		52375E98239C6A060083EAB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52375E96239C6A060083EAB9 /* LaunchScreen.storyboard */; };
+		9408857223A7BE6600AFA367 /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9408857123A7BE6600AFA367 /* data.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,7 @@
 		213516E623A2AB220046AC75 /* Purple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Purple.jpg; sourceTree = "<group>"; };
 		213516E723A2AB220046AC75 /* Blue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Blue.jpg; sourceTree = "<group>"; };
 		213516EE23A2AB840046AC75 /* Pink.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pink.jpg; sourceTree = "<group>"; };
+		21E3D28923A7B65C003C317C /* Registration Page View Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Registration Page View Controller.swift"; sourceTree = "<group>"; };
 		52375E85239C69F40083EAB9 /* FreeModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52375E88239C69F40083EAB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52375E8A239C69F40083EAB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		52375E94239C6A060083EAB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52375E97239C6A060083EAB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52375E99239C6A060083EAB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9408857123A7BE6600AFA367 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,10 +146,12 @@
 		52375E87239C69F40083EAB9 /* iOS_app_project */ = {
 			isa = PBXGroup;
 			children = (
+				9408857123A7BE6600AFA367 /* data.txt */,
 				210EC16623A2335C0031045D /* Icons */,
 				210EC15D23A225190031045D /* Pics */,
 				52375E88239C69F40083EAB9 /* AppDelegate.swift */,
 				210EC16423A22F850031045D /* Login Page View Controller.swift */,
+				21E3D28923A7B65C003C317C /* Registration Page View Controller.swift */,
 				52375E8A239C69F40083EAB9 /* SceneDelegate.swift */,
 				52375E8C239C69F40083EAB9 /* ViewController.swift */,
 				52375E8E239C69F40083EAB9 /* Main.storyboard */,
@@ -231,6 +237,7 @@
 				213516EF23A2AB840046AC75 /* Pink.jpg in Resources */,
 				210EC1B623A2335C0031045D /* icon40.jpg in Resources */,
 				210EC1C723A2335C0031045D /* icon20.jpg in Resources */,
+				9408857223A7BE6600AFA367 /* data.txt in Resources */,
 				210EC1C223A2335C0031045D /* icon87.jpg in Resources */,
 				210EC1C323A2335C0031045D /* icon120.jpg in Resources */,
 				210EC15F23A225370031045D /* Фон копия.jpg in Resources */,
@@ -253,6 +260,7 @@
 				52375E89239C69F40083EAB9 /* AppDelegate.swift in Sources */,
 				210EC16523A22F850031045D /* Login Page View Controller.swift in Sources */,
 				52375E8B239C69F40083EAB9 /* SceneDelegate.swift in Sources */,
+				21E3D28A23A7B65C003C317C /* Registration Page View Controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
