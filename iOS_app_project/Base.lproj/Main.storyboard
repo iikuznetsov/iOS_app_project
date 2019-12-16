@@ -411,45 +411,57 @@
         <!--Reg page View Controller-->
         <scene sceneID="5Me-yg-Hrb">
             <objects>
-                <viewController id="Ksw-zg-AUG" userLabel="Reg page View Controller" sceneMemberID="viewController">
+                <viewController id="Ksw-zg-AUG" userLabel="Reg page View Controller" customClass="RegistrationPageViewController" customModule="FreeModel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Wx-hQ-LBi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Фамилия" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="XRl-Zw-8Ur">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Фамилия" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="XRl-Zw-8Ur">
                                 <rect key="frame" x="60" y="322" width="294" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XRl-Zw-8Ur" secondAttribute="height" multiplier="147:17" id="z5P-ix-k1x"/>
+                                </constraints>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" keyboardAppearance="light" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Имя" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="ElH-b4-1Ha">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Имя" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="ElH-b4-1Ha">
                                 <rect key="frame" x="60" y="273" width="294" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ElH-b4-1Ha" secondAttribute="height" multiplier="147:17" id="zcS-uY-kGi"/>
+                                </constraints>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" keyboardAppearance="light" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Почта" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="PpG-di-SZ6">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Почта" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="PpG-di-SZ6">
                                 <rect key="frame" x="60" y="371" width="294" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PpG-di-SZ6" secondAttribute="height" multiplier="147:17" id="2W0-AP-VPA"/>
+                                </constraints>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" keyboardAppearance="light" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Телефон" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="dbT-Zn-jpa">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Телефон" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="dbT-Zn-jpa">
                                 <rect key="frame" x="60" y="421" width="294" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dbT-Zn-jpa" secondAttribute="height" multiplier="147:17" id="VHA-c4-rnp"/>
+                                </constraints>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" keyboardAppearance="light" textContentType="email"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Пароль" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Uz0-xO-5CV">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Пароль" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Uz0-xO-5CV">
                                 <rect key="frame" x="60" y="470" width="294" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Uz0-xO-5CV" secondAttribute="height" multiplier="147:17" id="cza-kR-XXo"/>
+                                </constraints>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" keyboardAppearance="light" textContentType="email"/>
                             </textField>
-                            <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dNZ-Ch-h7o">
-                                <rect key="frame" x="82" y="530" width="251" height="66"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dNZ-Ch-h7o">
+                                <rect key="frame" x="81.5" y="530" width="251" height="66"/>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dNZ-Ch-h7o" secondAttribute="height" multiplier="251:66" id="QRD-kT-l2Y"/>
+                                </constraints>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Зарегистрироваться">
@@ -464,6 +476,23 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ElH-b4-1Ha" firstAttribute="centerX" secondItem="1Wx-hQ-LBi" secondAttribute="centerX" id="4ej-pc-SNf"/>
+                            <constraint firstItem="PpG-di-SZ6" firstAttribute="top" secondItem="XRl-Zw-8Ur" secondAttribute="bottom" constant="15" id="52e-Jl-2Wk"/>
+                            <constraint firstItem="PpG-di-SZ6" firstAttribute="leading" secondItem="dbT-Zn-jpa" secondAttribute="leading" id="8nf-Ha-EMK"/>
+                            <constraint firstItem="PpG-di-SZ6" firstAttribute="trailing" secondItem="dbT-Zn-jpa" secondAttribute="trailing" id="Nbv-oq-XQc"/>
+                            <constraint firstItem="ElH-b4-1Ha" firstAttribute="trailing" secondItem="XRl-Zw-8Ur" secondAttribute="trailing" id="OWH-Jd-Rdv"/>
+                            <constraint firstItem="Uz0-xO-5CV" firstAttribute="centerX" secondItem="dNZ-Ch-h7o" secondAttribute="centerX" id="UdE-sg-iD5"/>
+                            <constraint firstItem="ElH-b4-1Ha" firstAttribute="leading" secondItem="djS-A6-W5r" secondAttribute="leading" constant="60" id="UxT-Wh-EJg"/>
+                            <constraint firstItem="dbT-Zn-jpa" firstAttribute="leading" secondItem="Uz0-xO-5CV" secondAttribute="leading" id="V4i-Vi-9CV"/>
+                            <constraint firstItem="dbT-Zn-jpa" firstAttribute="top" secondItem="PpG-di-SZ6" secondAttribute="bottom" constant="16" id="YGs-o7-i7h"/>
+                            <constraint firstItem="djS-A6-W5r" firstAttribute="bottom" secondItem="dNZ-Ch-h7o" secondAttribute="bottom" constant="266" id="aJl-tW-ZhJ"/>
+                            <constraint firstItem="ElH-b4-1Ha" firstAttribute="top" secondItem="djS-A6-W5r" secondAttribute="top" constant="229" id="c74-7P-a8T"/>
+                            <constraint firstItem="Uz0-xO-5CV" firstAttribute="top" secondItem="dbT-Zn-jpa" secondAttribute="bottom" constant="15" id="ott-C5-4fM"/>
+                            <constraint firstItem="dNZ-Ch-h7o" firstAttribute="top" secondItem="Uz0-xO-5CV" secondAttribute="bottom" constant="26" id="suD-Ha-3Vt"/>
+                            <constraint firstItem="XRl-Zw-8Ur" firstAttribute="leading" secondItem="PpG-di-SZ6" secondAttribute="leading" id="tfo-jQ-y3R"/>
+                            <constraint firstItem="XRl-Zw-8Ur" firstAttribute="top" secondItem="ElH-b4-1Ha" secondAttribute="bottom" constant="15" id="uDY-Hi-Ngi"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="djS-A6-W5r"/>
                     </view>
                     <navigationItem key="navigationItem" id="t2I-vQ-Usk"/>
