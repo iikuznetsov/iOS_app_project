@@ -115,6 +115,9 @@
                                                 </fragment>
                                             </attributedString>
                                         </state>
+                                        <connections>
+                                            <segue destination="Ksw-zg-AUG" kind="show" id="nyu-Zi-yxQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -171,6 +174,7 @@
                                     </attributedString>
                                 </state>
                                 <connections>
+                                    <action selector="tryEnterAction:" destination="u0Y-sl-xLL" eventType="touchUpInside" id="Gf1-td-vzQ"/>
                                     <segue destination="hBH-9Z-nJv" kind="show" id="rMN-tj-YTE"/>
                                 </connections>
                             </button>
@@ -252,6 +256,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="qkF-EC-n1e"/>
                     <connections>
+                        <outlet property="emailOutlet" destination="24S-Ii-Fia" id="w8R-xz-rmC"/>
+                        <outlet property="passwordOutlet" destination="teh-EA-WBa" id="7cm-Pq-mpl"/>
                         <segue destination="Ksw-zg-AUG" kind="show" identifier="goToRegPage" id="ZIV-6k-FSa"/>
                     </connections>
                 </viewController>
@@ -435,4 +441,7 @@
     <resources>
         <image name="Лого.png" width="782" height="727"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZIV-6k-FSa"/>
+    </inferredMetricsTieBreakers>
 </document>
