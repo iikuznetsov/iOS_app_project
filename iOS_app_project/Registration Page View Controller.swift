@@ -14,9 +14,9 @@ class RegistrationPageViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     
-
-    @IBAction func semgentedControl(_ sender: Any) {
+    @IBAction func segmentedControl(_ sender: UISegmentedControl) {
     }
+    
     
     
     override func viewDidLoad() {
