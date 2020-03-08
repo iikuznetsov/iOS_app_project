@@ -37,11 +37,16 @@ class LoginPageViewController: UIViewController {
         print("File Text: \(readString)")
         var data = Array<Substring>()
         data = readString.split(separator: ",")
+       
         print(data[3])
         print(emailOutlet.text!)
         print(emailOutlet.text! == data[3])
+        
+        print(data.count)
+        
         if((emailOutlet.text! == data[3]) && (passwordOutlet.text! == data[1])){
             print("fuck you bitch")
+
         }
     
         
