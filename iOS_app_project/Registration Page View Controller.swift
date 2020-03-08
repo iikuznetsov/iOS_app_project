@@ -22,6 +22,7 @@ class RegistrationPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Yellow.jpg")!)
+        print("Max")
         // Do any additional setup after loading th
     }
     
