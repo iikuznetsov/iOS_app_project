@@ -7,10 +7,11 @@
 //
 
 import Foundation
-
+import CoreData
 import UIKit
 
 class LoginPageViewController: UIViewController {
+    var context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +26,25 @@ class LoginPageViewController: UIViewController {
         self.performSegue(withIdentifier: "goToRegPage", sender: self)
     }
     
+    
+    
     @IBAction func tryEnterAction(_ sender: UIButton) {
+        let request = User.fetchRequest() as NSFetchRequest<User>
+        if let result = try? context?.fetch(request) {
+            for user in result {
+                print(user.login!)
+                if(emailOutlet.text == user.login && passwordOutlet.text == user.password){
+                    print("nice")
+                    
+                }
+            }
+        /*if let cont = context {
+                   let user = User(context: cont)
+            user.login = "a"
+                   try? cont.save()
+        }*/
         
+        /*
         var readString = ""
         do {
             
@@ -47,7 +65,7 @@ class LoginPageViewController: UIViewController {
         if((emailOutlet.text! == data[3]) && (passwordOutlet.text! == data[1])){
             print("fuck you bitch")
 
-        }
+        }*/
     
         
         
@@ -70,5 +88,5 @@ class LoginPageViewController: UIViewController {
             
     }
 }
-    
+}
 

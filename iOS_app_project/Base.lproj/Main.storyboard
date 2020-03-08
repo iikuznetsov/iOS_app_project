@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IS1-hO-4go">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IS1-hO-4go">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -283,9 +283,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HI7-b1-eEh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1211.5942028985507" y="257.8125"/>
+            <point key="canvasLocation" x="1241" y="258"/>
         </scene>
-        <!--Item 2-->
+        <!--Главная-->
         <scene sceneID="KlI-hf-iRo">
             <objects>
                 <viewController id="r0l-NE-EK2" sceneMemberID="viewController">
@@ -344,13 +344,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zLh-5X-lQv"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="xjs-BD-vdQ"/>
+                    <tabBarItem key="tabBarItem" title="Главная" image="paperplane.fill" catalog="system" id="xjs-BD-vdQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8vk-DC-ueN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3498.5507246376815" y="500.89285714285711"/>
         </scene>
-        <!--Item 1-->
+        <!--Поиск-->
         <scene sceneID="mxs-6I-LzV">
             <objects>
                 <viewController id="xxj-39-Qgb" sceneMemberID="viewController">
@@ -466,7 +466,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ZbU-nW-eVt"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="cHB-U1-fpl"/>
+                    <tabBarItem key="tabBarItem" title="Поиск" image="magnifyingglass" catalog="system" id="cHB-U1-fpl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QOw-p6-t8p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -483,8 +483,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="xxj-39-Qgb" kind="relationship" relationship="viewControllers" id="6Ra-7i-aBx"/>
                         <segue destination="r0l-NE-EK2" kind="relationship" relationship="viewControllers" id="EAl-B7-4xl"/>
+                        <segue destination="xxj-39-Qgb" kind="relationship" relationship="viewControllers" id="boH-nk-XkS"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KW5-uc-2m9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -509,11 +509,11 @@
                                     <action selector="semgentedControl:" destination="Ksw-zg-AUG" eventType="valueChanged" id="6Bs-yO-mXo"/>
                                 </connections>
                             </segmentedControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oX7-cB-fvV">
-                                <rect key="frame" x="0.0" y="83" width="828" height="813"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oX7-cB-fvV">
+                                <rect key="frame" x="0.0" y="83" width="828" height="793"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1pE-S5-QUw">
-                                        <rect key="frame" x="0.0" y="0.0" width="828" height="813"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1pE-S5-QUw">
+                                        <rect key="frame" x="0.0" y="0.0" width="828" height="793"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HWk-H9-mYf">
                                                 <rect key="frame" x="67" y="58" width="240" height="128"/>
@@ -531,7 +531,9 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="1pE-S5-QUw" firstAttribute="top" secondItem="YdE-FQ-N4M" secondAttribute="top" id="IED-Zp-rHD"/>
+                                    <constraint firstAttribute="trailing" secondItem="1pE-S5-QUw" secondAttribute="trailing" id="M3q-AX-He7"/>
                                     <constraint firstItem="1pE-S5-QUw" firstAttribute="trailing" secondItem="YdE-FQ-N4M" secondAttribute="trailing" id="dqt-Ts-VDy"/>
+                                    <constraint firstItem="1pE-S5-QUw" firstAttribute="bottom" secondItem="YdE-FQ-N4M" secondAttribute="bottom" id="szq-Id-poh"/>
                                     <constraint firstAttribute="bottom" secondItem="1pE-S5-QUw" secondAttribute="bottom" constant="20" symbolic="YES" id="tXx-ay-QRJ"/>
                                     <constraint firstItem="1pE-S5-QUw" firstAttribute="leading" secondItem="YdE-FQ-N4M" secondAttribute="leading" id="uBA-eN-Xi1"/>
                                 </constraints>
@@ -578,6 +580,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="paperplane.fill" catalog="system" width="64" height="60"/>
         <image name="Лого.png" width="782" height="727"/>
     </resources>
     <inferredMetricsTieBreakers>
