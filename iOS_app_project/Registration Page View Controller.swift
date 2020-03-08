@@ -12,6 +12,13 @@ import UIKit
 
 class RegistrationPageViewController: UIViewController {
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+
+    @IBAction func semgentedControl(_ sender: Any) {
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Yellow.jpg")!)
