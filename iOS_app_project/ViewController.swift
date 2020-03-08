@@ -35,6 +35,9 @@ class ViewController: UIViewController {
         try? context!.save()*/
     }
 
+    @IBAction func newAccountAction(_ sender: Any) {
+        self.performSegue(withIdentifier: "goToRegPage", sender: self)
+    }
     @IBAction func enterButtonAction(_ sender: UIButton) {
         self.performSegue(withIdentifier: "goToLoginPage", sender: self)
     }
