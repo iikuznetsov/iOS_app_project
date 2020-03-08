@@ -116,7 +116,7 @@
                                             </attributedString>
                                         </state>
                                         <connections>
-                                            <segue destination="Ksw-zg-AUG" kind="show" id="nyu-Zi-yxQ"/>
+                                            <segue destination="Ksw-zg-AUG" kind="show" id="P1F-uF-rPe"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -499,63 +499,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="828" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Fzm-Qr-tLt">
-                                <rect key="frame" x="20" y="26" width="788" height="32"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vZp-kC-nug">
+                                <rect key="frame" x="20" y="27" width="788" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
                                 <connections>
-                                    <action selector="semgentedControl:" destination="Ksw-zg-AUG" eventType="valueChanged" id="6Bs-yO-mXo"/>
+                                    <action selector="segmentedControl:" destination="Ksw-zg-AUG" eventType="valueChanged" id="nm9-Ib-NVf"/>
                                 </connections>
                             </segmentedControl>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oX7-cB-fvV">
-                                <rect key="frame" x="0.0" y="83" width="828" height="813"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dso-c1-B7B">
+                                <rect key="frame" x="0.0" y="79" width="828" height="817"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1pE-S5-QUw">
-                                        <rect key="frame" x="0.0" y="0.0" width="828" height="813"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rAd-2p-rMd">
+                                        <rect key="frame" x="0.0" y="0.0" width="828" height="817"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HWk-H9-mYf">
-                                                <rect key="frame" x="67" y="58" width="240" height="128"/>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bdh-rp-twZ">
+                                                <rect key="frame" x="67" y="104" width="240" height="128"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9bP-Bu-dZI">
-                                                <rect key="frame" x="512" y="208" width="240" height="128"/>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oJ4-wG-BEX">
+                                                <rect key="frame" x="483" y="316" width="240" height="128"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="1pE-S5-QUw" firstAttribute="top" secondItem="YdE-FQ-N4M" secondAttribute="top" id="IED-Zp-rHD"/>
-                                    <constraint firstItem="1pE-S5-QUw" firstAttribute="trailing" secondItem="YdE-FQ-N4M" secondAttribute="trailing" id="dqt-Ts-VDy"/>
-                                    <constraint firstAttribute="bottom" secondItem="1pE-S5-QUw" secondAttribute="bottom" constant="20" symbolic="YES" id="tXx-ay-QRJ"/>
-                                    <constraint firstItem="1pE-S5-QUw" firstAttribute="leading" secondItem="YdE-FQ-N4M" secondAttribute="leading" id="uBA-eN-Xi1"/>
+                                    <constraint firstItem="rAd-2p-rMd" firstAttribute="trailing" secondItem="Sle-Ub-chC" secondAttribute="trailing" id="ErD-fg-a0n"/>
+                                    <constraint firstItem="rAd-2p-rMd" firstAttribute="leading" secondItem="Sle-Ub-chC" secondAttribute="leading" id="fSQ-MQ-Vtn"/>
+                                    <constraint firstItem="rAd-2p-rMd" firstAttribute="top" secondItem="Sle-Ub-chC" secondAttribute="top" id="hxs-PY-Wdz"/>
+                                    <constraint firstAttribute="bottom" secondItem="rAd-2p-rMd" secondAttribute="bottom" constant="20" symbolic="YES" id="qR9-Jk-fAn"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="rti-Ha-1Oz"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="YdE-FQ-N4M"/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="M79-Nb-4sy"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Sle-Ub-chC"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="oX7-cB-fvV" firstAttribute="trailing" secondItem="djS-A6-W5r" secondAttribute="trailing" id="BV6-du-gD0"/>
-                            <constraint firstItem="oX7-cB-fvV" firstAttribute="top" secondItem="Fzm-Qr-tLt" secondAttribute="bottom" constant="26" id="CP6-ad-UDR"/>
-                            <constraint firstItem="oX7-cB-fvV" firstAttribute="leading" secondItem="djS-A6-W5r" secondAttribute="leading" id="DIv-MS-Vls"/>
-                            <constraint firstItem="Fzm-Qr-tLt" firstAttribute="top" secondItem="1Wx-hQ-LBi" secondAttribute="top" constant="26" id="H92-m9-m4Q"/>
-                            <constraint firstItem="Fzm-Qr-tLt" firstAttribute="leading" secondItem="djS-A6-W5r" secondAttribute="leading" constant="20" id="Lek-uj-2ss"/>
-                            <constraint firstAttribute="bottom" secondItem="oX7-cB-fvV" secondAttribute="bottom" constant="20" symbolic="YES" id="N0J-Ya-m2J"/>
-                            <constraint firstItem="djS-A6-W5r" firstAttribute="trailing" secondItem="Fzm-Qr-tLt" secondAttribute="trailing" constant="20" id="yMU-P7-o16"/>
+                            <constraint firstItem="vZp-kC-nug" firstAttribute="top" secondItem="1Wx-hQ-LBi" secondAttribute="top" constant="27" id="06V-Wp-zmo"/>
+                            <constraint firstItem="vZp-kC-nug" firstAttribute="leading" secondItem="djS-A6-W5r" secondAttribute="leading" constant="20" id="5JD-Ep-oVP"/>
+                            <constraint firstItem="djS-A6-W5r" firstAttribute="trailing" secondItem="vZp-kC-nug" secondAttribute="trailing" constant="20" id="g9i-0C-CaX"/>
+                            <constraint firstAttribute="bottom" secondItem="dso-c1-B7B" secondAttribute="bottom" constant="20" symbolic="YES" id="jjQ-Fb-kue"/>
+                            <constraint firstItem="dso-c1-B7B" firstAttribute="top" secondItem="vZp-kC-nug" secondAttribute="bottom" constant="21" id="sYZ-E7-jS4"/>
+                            <constraint firstItem="dso-c1-B7B" firstAttribute="leading" secondItem="djS-A6-W5r" secondAttribute="leading" id="x3A-HR-sNT"/>
+                            <constraint firstItem="dso-c1-B7B" firstAttribute="trailing" secondItem="djS-A6-W5r" secondAttribute="trailing" id="y8M-BB-4Kh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="djS-A6-W5r"/>
                     </view>
                     <navigationItem key="navigationItem" id="t2I-vQ-Usk"/>
                     <size key="freeformSize" width="828" height="896"/>
-                    <connections>
-                        <outlet property="scrollView" destination="oX7-cB-fvV" id="LOb-I6-dpi"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S7O-Ec-wDv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -581,6 +578,6 @@
         <image name="Лого.png" width="782" height="727"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZIV-6k-FSa"/>
+        <segue reference="P1F-uF-rPe"/>
     </inferredMetricsTieBreakers>
 </document>
