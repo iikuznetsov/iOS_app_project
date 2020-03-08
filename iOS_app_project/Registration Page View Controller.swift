@@ -12,17 +12,11 @@ import UIKit
 
 class RegistrationPageViewController: UIViewController {
     
-    @IBOutlet weak var scrollView: UIScrollView!
-    
-    @IBAction func segmentedControl(_ sender: UISegmentedControl) {
-    }
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Yellow.jpg")!)
         print("Max")
+        print("suka blyat")
         // Do any additional setup after loading th
     }
     
