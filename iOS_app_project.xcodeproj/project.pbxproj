@@ -37,6 +37,7 @@
 		52375E95239C6A060083EAB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52375E94239C6A060083EAB9 /* Assets.xcassets */; };
 		52375E98239C6A060083EAB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52375E96239C6A060083EAB9 /* LaunchScreen.storyboard */; };
 		9408857223A7BE6600AFA367 /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9408857123A7BE6600AFA367 /* data.txt */; };
+		94093CF724158417006C7831 /* NewRegPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94093CF624158417006C7831 /* NewRegPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +73,7 @@
 		52375E97239C6A060083EAB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52375E99239C6A060083EAB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9408857123A7BE6600AFA367 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
+		94093CF624158417006C7831 /* NewRegPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRegPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 				52375E96239C6A060083EAB9 /* LaunchScreen.storyboard */,
 				52375E99239C6A060083EAB9 /* Info.plist */,
 				52375E91239C69F40083EAB9 /* iOS_app_project.xcdatamodeld */,
+				94093CF624158417006C7831 /* NewRegPageViewController.swift */,
 			);
 			path = iOS_app_project;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				52375E93239C69F40083EAB9 /* iOS_app_project.xcdatamodeld in Sources */,
 				52375E89239C69F40083EAB9 /* AppDelegate.swift in Sources */,
 				210EC16523A22F850031045D /* Login Page View Controller.swift in Sources */,
+				94093CF724158417006C7831 /* NewRegPageViewController.swift in Sources */,
 				52375E8B239C69F40083EAB9 /* SceneDelegate.swift in Sources */,
 				21E3D28A23A7B65C003C317C /* Registration Page View Controller.swift in Sources */,
 			);
