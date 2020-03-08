@@ -34,25 +34,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vxq-IZ-HeA">
                                 <rect key="frame" x="50" y="264" width="314" height="84"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47B-Pc-jnO">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добро пожаловать!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="47B-Pc-jnO">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="OLf-Gh-NT1"/>
                                             <constraint firstAttribute="width" constant="314" id="xDN-BC-y8G"/>
                                         </constraints>
-                                        <attributedString key="attributedText">
-                                            <fragment content="Добро пожаловать!">
-                                                <attributes>
-                                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                    <font key="NSFont" size="50" name="DINCondensed-Bold"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    <shadow key="NSShadow">
-                                                        <size key="offset" width="3.8270212473354788e-16" height="6.25"/>
-                                                        <color key="color" red="0.0" green="0.0" blue="0.0" alpha="0.12513469827586207" colorSpace="calibratedRGB"/>
-                                                    </shadow>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <fontDescription key="fontDescription" name="DINCondensed-Bold" family="DIN Condensed" pointSize="50"/>
+                                        <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                         <nil key="highlightedColor"/>
                                         <color key="shadowColor" systemColor="tertiaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                     </label>
@@ -505,19 +494,72 @@
         <!--Reg page View Controller-->
         <scene sceneID="5Me-yg-Hrb">
             <objects>
-                <viewController id="Ksw-zg-AUG" userLabel="Reg page View Controller" sceneMemberID="viewController">
+                <viewController id="Ksw-zg-AUG" userLabel="Reg page View Controller" customClass="RegistrationPageViewController" customModule="FreeModel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Wx-hQ-LBi">
                         <rect key="frame" x="0.0" y="0.0" width="828" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Fzm-Qr-tLt">
+                                <rect key="frame" x="20" y="26" width="788" height="32"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="semgentedControl:" destination="Ksw-zg-AUG" eventType="valueChanged" id="6Bs-yO-mXo"/>
+                                </connections>
+                            </segmentedControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oX7-cB-fvV">
+                                <rect key="frame" x="0.0" y="83" width="828" height="813"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1pE-S5-QUw">
+                                        <rect key="frame" x="0.0" y="0.0" width="828" height="813"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HWk-H9-mYf">
+                                                <rect key="frame" x="67" y="58" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9bP-Bu-dZI">
+                                                <rect key="frame" x="512" y="208" width="240" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="1pE-S5-QUw" firstAttribute="top" secondItem="YdE-FQ-N4M" secondAttribute="top" id="IED-Zp-rHD"/>
+                                    <constraint firstItem="1pE-S5-QUw" firstAttribute="trailing" secondItem="YdE-FQ-N4M" secondAttribute="trailing" id="dqt-Ts-VDy"/>
+                                    <constraint firstAttribute="bottom" secondItem="1pE-S5-QUw" secondAttribute="bottom" constant="20" symbolic="YES" id="tXx-ay-QRJ"/>
+                                    <constraint firstItem="1pE-S5-QUw" firstAttribute="leading" secondItem="YdE-FQ-N4M" secondAttribute="leading" id="uBA-eN-Xi1"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="rti-Ha-1Oz"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="YdE-FQ-N4M"/>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="oX7-cB-fvV" firstAttribute="trailing" secondItem="djS-A6-W5r" secondAttribute="trailing" id="BV6-du-gD0"/>
+                            <constraint firstItem="oX7-cB-fvV" firstAttribute="top" secondItem="Fzm-Qr-tLt" secondAttribute="bottom" constant="26" id="CP6-ad-UDR"/>
+                            <constraint firstItem="oX7-cB-fvV" firstAttribute="leading" secondItem="djS-A6-W5r" secondAttribute="leading" id="DIv-MS-Vls"/>
+                            <constraint firstItem="Fzm-Qr-tLt" firstAttribute="top" secondItem="1Wx-hQ-LBi" secondAttribute="top" constant="26" id="H92-m9-m4Q"/>
+                            <constraint firstItem="Fzm-Qr-tLt" firstAttribute="leading" secondItem="djS-A6-W5r" secondAttribute="leading" constant="20" id="Lek-uj-2ss"/>
+                            <constraint firstAttribute="bottom" secondItem="oX7-cB-fvV" secondAttribute="bottom" constant="20" symbolic="YES" id="N0J-Ya-m2J"/>
+                            <constraint firstItem="djS-A6-W5r" firstAttribute="trailing" secondItem="Fzm-Qr-tLt" secondAttribute="trailing" constant="20" id="yMU-P7-o16"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="djS-A6-W5r"/>
                     </view>
                     <navigationItem key="navigationItem" id="t2I-vQ-Usk"/>
                     <size key="freeformSize" width="828" height="896"/>
+                    <connections>
+                        <outlet property="scrollView" destination="oX7-cB-fvV" id="LOb-I6-dpi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S7O-Ec-wDv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1212" y="994"/>
+            <point key="canvasLocation" x="1211.5942028985507" y="993.75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aJi-pB-dWU">
