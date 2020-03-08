@@ -174,7 +174,6 @@
                                 </state>
                                 <connections>
                                     <action selector="tryEnterAction:" destination="u0Y-sl-xLL" eventType="touchUpInside" id="Gf1-td-vzQ"/>
-                                    <segue destination="hBH-9Z-nJv" kind="show" id="rMN-tj-YTE"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cyz-dY-ci6">
@@ -279,6 +278,7 @@
                         <outlet property="emailOutlet" destination="24S-Ii-Fia" id="w8R-xz-rmC"/>
                         <outlet property="passwordOutlet" destination="teh-EA-WBa" id="7cm-Pq-mpl"/>
                         <segue destination="Ksw-zg-AUG" kind="show" identifier="goToRegPage" id="ZIV-6k-FSa"/>
+                        <segue destination="hBH-9Z-nJv" kind="show" identifier="goToTabPage" id="f1L-dZ-6eY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HI7-b1-eEh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

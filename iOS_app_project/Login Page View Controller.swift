@@ -29,13 +29,14 @@ class LoginPageViewController: UIViewController {
     
     
     @IBAction func tryEnterAction(_ sender: UIButton) {
+        print("ass")
         let request = User.fetchRequest() as NSFetchRequest<User>
         if let result = try? context?.fetch(request) {
             for user in result {
                 print(user.login!)
                 if(emailOutlet.text == user.login && passwordOutlet.text == user.password){
                     print("nice")
-                    
+                    self.performSegue(withIdentifier: "goToTabPage", sender: self)
                 }
             }
         /*if let cont = context {
