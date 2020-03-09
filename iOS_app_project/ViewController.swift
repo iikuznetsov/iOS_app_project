@@ -7,20 +7,38 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
+    var context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
+
     override func viewDidLoad() {
         super.viewDidLoad()
         //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Фон копия.jpg")!)
         // Do any additional setup after loading th
+        
+        //Add data
+       /*if let cont = context {
+            let user = User(context: cont)
+            user.login = "maria"
+            user.password = "2020"
+            try? cont.save()
+        }*/
+        
+        //Delete data
+        /*
+        let req = NSFetchRequest<User>(entityName: "User")
+        req.predicate = NSPredicate(format: "login == %@", "max")
+                
+        let delReq = NSBatchDeleteRequest(fetchRequest: req as! NSFetchRequest<NSFetchRequestResult>)
+        try? context?.execute(delReq)
+        try? context!.save()*/
     }
-
+    @IBAction func newAccountAction(_ sender: Any) {
+        self.performSegue(withIdentifier: "goToRegPage", sender: self)
+    }
+    
     @IBAction func enterButtonAction(_ sender: UIButton) {
         self.performSegue(withIdentifier: "goToLoginPage", sender: self)
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        navigationController?.setNavigationBarHidden(true, animated: false)
     }
 }

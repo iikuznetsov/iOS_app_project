@@ -15,15 +15,9 @@ class LoginPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Pink.jpg")!)
         // Do any additional setup after loading th
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        navigationController?.setNavigationBarHidden(true, animated: false)
-    }
-    
     @IBOutlet weak var emailOutlet: UITextField!
     
     @IBOutlet weak var passwordOutlet: UITextField!
@@ -35,13 +29,14 @@ class LoginPageViewController: UIViewController {
     
     
     @IBAction func tryEnterAction(_ sender: UIButton) {
+        print("ass")
         let request = User.fetchRequest() as NSFetchRequest<User>
         if let result = try? context?.fetch(request) {
             for user in result {
                 print(user.login!)
                 if(emailOutlet.text == user.login && passwordOutlet.text == user.password){
                     print("nice")
-                    
+                    self.performSegue(withIdentifier: "goToTabPage", sender: self)
                 }
             }
         /*if let cont = context {
@@ -95,4 +90,5 @@ class LoginPageViewController: UIViewController {
     }
 }
 }
+
 
