@@ -314,7 +314,7 @@
                             <outlet property="delegate" destination="op5-Xb-iTj" id="psG-xO-lU7"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Главная" id="eJy-W2-7fy"/>
+                    <tabBarItem key="tabBarItem" title="Главная" image="flame" catalog="system" id="eJy-W2-7fy"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Main" id="Xit-5V-vTm"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -323,7 +323,7 @@
             </objects>
             <point key="canvasLocation" x="3468.115942028986" y="-173.4375"/>
         </scene>
-        <!--Item 2-->
+        <!--Поиск-->
         <scene sceneID="KlI-hf-iRo">
             <objects>
                 <viewController id="r0l-NE-EK2" sceneMemberID="viewController">
@@ -336,11 +336,16 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
+                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B6L-u8-6AS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="zLh-5X-lQv"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="xjs-BD-vdQ"/>
+                    <tabBarItem key="tabBarItem" title="Поиск" image="viewfinder" catalog="system" id="xjs-BD-vdQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8vk-DC-ueN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -470,6 +475,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="flame" catalog="system" width="54" height="64"/>
+        <image name="viewfinder" catalog="system" width="64" height="56"/>
         <image name="Лого.png" width="782" height="727"/>
     </resources>
     <inferredMetricsTieBreakers>
