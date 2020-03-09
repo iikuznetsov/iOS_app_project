@@ -16,9 +16,9 @@ class MainPageViewController: UICollectionViewController {
         
         var buttonImage: UIImage {
             switch self {
-            case .table: return #imageLiteral(resourceName: "icon80.jpg")
-            case .defaultGrid: return #imageLiteral(resourceName: "icon87.jpg")
-            case .customGrid: return #imageLiteral(resourceName: "icon180.jpg")
+            case .table: return #imageLiteral(resourceName: "Image-3")
+            case .defaultGrid: return #imageLiteral(resourceName: "Image-2")
+            case .customGrid: return #imageLiteral(resourceName: "Image-1")
             }
         }
     }
