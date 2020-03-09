@@ -279,6 +279,7 @@
                         <outlet property="emailOutlet" destination="24S-Ii-Fia" id="w8R-xz-rmC"/>
                         <outlet property="passwordOutlet" destination="teh-EA-WBa" id="7cm-Pq-mpl"/>
                         <segue destination="Ksw-zg-AUG" kind="show" identifier="goToRegPage" id="ZIV-6k-FSa"/>
+                        <segue destination="hBH-9Z-nJv" kind="show" identifier="goToTabPage" id="lLj-6n-8Zg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HI7-b1-eEh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -704,4 +705,7 @@
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
         <image name="Лого.png" width="782" height="727"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="lLj-6n-8Zg"/>
+    </inferredMetricsTieBreakers>
 </document>
