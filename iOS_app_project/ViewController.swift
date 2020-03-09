@@ -18,4 +18,9 @@ class ViewController: UIViewController {
     @IBAction func enterButtonAction(_ sender: UIButton) {
         self.performSegue(withIdentifier: "goToLoginPage", sender: self)
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
 }

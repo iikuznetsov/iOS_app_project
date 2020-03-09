@@ -15,9 +15,15 @@ class LoginPageViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Pink.jpg")!)
         // Do any additional setup after loading th
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
+    }
+    
     @IBOutlet weak var emailOutlet: UITextField!
     
     @IBOutlet weak var passwordOutlet: UITextField!
