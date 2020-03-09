@@ -37,7 +37,6 @@
 		21D880D62415894C00FBE60E /* TabledContentCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D880D22415894C00FBE60E /* TabledContentCollectionViewDelegate.swift */; };
 		21D880D72415894C00FBE60E /* DefaultCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D880D32415894C00FBE60E /* DefaultCollectionViewDelegate.swift */; };
 		21D880D82415894C00FBE60E /* CustomGriddedContentCollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D880D42415894C00FBE60E /* CustomGriddedContentCollectionViewDelegate.swift */; };
-		21E3D28A23A7B65C003C317C /* Registration Page View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E3D28923A7B65C003C317C /* Registration Page View Controller.swift */; };
 		52375E89239C69F40083EAB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52375E88239C69F40083EAB9 /* AppDelegate.swift */; };
 		52375E8B239C69F40083EAB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52375E8A239C69F40083EAB9 /* SceneDelegate.swift */; };
 		52375E8D239C69F40083EAB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52375E8C239C69F40083EAB9 /* ViewController.swift */; };
@@ -80,7 +79,6 @@
 		21D880D22415894C00FBE60E /* TabledContentCollectionViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabledContentCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		21D880D32415894C00FBE60E /* DefaultCollectionViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultCollectionViewDelegate.swift; sourceTree = "<group>"; };
 		21D880D42415894C00FBE60E /* CustomGriddedContentCollectionViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomGriddedContentCollectionViewDelegate.swift; sourceTree = "<group>"; };
-		21E3D28923A7B65C003C317C /* Registration Page View Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Registration Page View Controller.swift"; sourceTree = "<group>"; };
 		52375E85239C69F40083EAB9 /* FreeModel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeModel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52375E88239C69F40083EAB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52375E8A239C69F40083EAB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,7 +185,6 @@
 				210EC15D23A225190031045D /* Pics */,
 				52375E88239C69F40083EAB9 /* AppDelegate.swift */,
 				210EC16423A22F850031045D /* Login Page View Controller.swift */,
-				21E3D28923A7B65C003C317C /* Registration Page View Controller.swift */,
 				52375E8A239C69F40083EAB9 /* SceneDelegate.swift */,
 				52375E8C239C69F40083EAB9 /* ViewController.swift */,
 				52375E8E239C69F40083EAB9 /* Main.storyboard */,
@@ -308,7 +305,6 @@
 				21D880D02415885F00FBE60E /* MainPageProvider.swift in Sources */,
 				52375E8B239C69F40083EAB9 /* SceneDelegate.swift in Sources */,
 				21D880D82415894C00FBE60E /* CustomGriddedContentCollectionViewDelegate.swift in Sources */,
-				21E3D28A23A7B65C003C317C /* Registration Page View Controller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

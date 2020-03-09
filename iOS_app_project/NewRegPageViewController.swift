@@ -134,3 +134,4 @@ class NewRegPageViewController: UIViewController, UINavigationControllerDelegate
     */
 
 }
+
