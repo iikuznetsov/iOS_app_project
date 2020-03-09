@@ -9,12 +9,13 @@
 import UIKit
 import CoreData
 
-class NewRegPageViewController: UIViewController {
+class NewRegPageViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     var context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
     
     @IBOutlet weak var UserView: UIView!
    
     @IBOutlet weak var MasterView: UIView!
+    
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     
@@ -25,6 +26,11 @@ class NewRegPageViewController: UIViewController {
     @IBOutlet weak var userEmailTextField: UITextField!
     
     @IBOutlet weak var userPhoneTextField: UITextField!
+    
+    @IBOutlet weak var photoImageView: UIImageView!
+    
+    
+    
     
     @IBAction func isSelectionChanged(_ sender: Any) {
         print(segmentedControl.selectedSegmentIndex)
@@ -79,7 +85,34 @@ class NewRegPageViewController: UIViewController {
             }
         }
     
+    @IBAction func imageButtonAction(_ sender: Any) {
+        masterReg()
+    }
     
+    
+    
+    func masterReg(){
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .camera;
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    /*
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true)
+
+        guard let image = info[.editedImage] as? UIImage else {
+            print("No image found")
+            return
+        }
+        
+        // print out the image size as a test
+        print(image.size)
+        photoImageView.image = image
+    }*/
     
     override func viewDidLoad() {
         super.viewDidLoad()
