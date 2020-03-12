@@ -28,6 +28,9 @@ class NewRegPageViewController: UIViewController, UINavigationControllerDelegate
     
     @IBOutlet weak var userPhoneTextField: UITextField!
     
+    @IBOutlet weak var masterCodeTextField: UITextField!
+    
+    @IBOutlet weak var masterOccupationTextField: UITextField!
     
     @IBOutlet weak var photoImageView: UIImageView!
     
@@ -39,10 +42,8 @@ class NewRegPageViewController: UIViewController, UINavigationControllerDelegate
         switch segmentedControl.selectedSegmentIndex {
         case 0:
             MasterView.isHidden = true
-            UserView.isHidden = false
         case 1:
             MasterView.isHidden = false
-            UserView.isHidden = true
         default:
             break;
         }
@@ -73,6 +74,10 @@ class NewRegPageViewController: UIViewController, UINavigationControllerDelegate
                     newUser.password = userPasswordTextField.text
                     newUser.email = userEmailTextField.text
                     newUser.phone = userPhoneTextField.text
+                    if segmentedControl.selectedSegmentIndex == 1{
+                        //masterCodeTextField.text
+                        //masterOccupationTextField.text
+                    }
                     try? cont.save()
                 }
                 self.performSegue(withIdentifier: "toTabBar", sender: self)
