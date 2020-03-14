@@ -23,7 +23,9 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var phoneLabel: UILabel!
     
-    let currentUserLogin: String = "test69"
+    let currentUserLogin: String = "12345"
+    
+    var currentUser: signedInUser = signedInUser(login: "", password: "", email: "", phone: "", user_type: "Model")
     
     var context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
     
@@ -43,22 +45,28 @@ class ProfileViewController: UIViewController {
                                     loginLabel.text = model.login
                                     passwordLabel.text = model.password
                                     emailLabel.text = model.email
-                                    print(model.email)
                                     phoneLabel.text = model.phone
+                                    let currUser = signedInUser(login: model.login!, password: model.password!, email: model.email!, phone: model.phone!, user_type: user.user_type!)
+                                    currentUser = currUser
                                 }
                             }
                         }
                     default : break
                     }
-                    loginLabel.text = user.login
-                    passwordLabel.text = user.password
-                    //emailLabel.text 
                 }
             }
         }
     }
     
-
+    @IBAction func editButtonAction(_ sender: Any) {
+        self.performSegue(withIdentifier: "goToEditPage", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as? EditingProfileViewController
+        vc?.currentUser = currentUser
+    }
+    
     /*
     // MARK: - Navigation
 

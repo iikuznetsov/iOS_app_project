@@ -33,6 +33,7 @@
         <attribute name="password" optional="YES" attributeType="String"/>
         <attribute name="phone" optional="YES" attributeType="String"/>
         <attribute name="sex" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="surname" optional="YES" attributeType="String"/>
     </entity>
     <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
         <attribute name="login" optional="YES" attributeType="String"/>
@@ -43,7 +44,7 @@
         <element name="Master" positionX="-63" positionY="-18" width="128" height="223"/>
         <element name="Masterclass" positionX="-18" positionY="81" width="128" height="148"/>
         <element name="Masters_account" positionX="-36" positionY="72" width="128" height="43"/>
-        <element name="Model" positionX="117.62109375" positionY="-169.703125" width="128" height="163"/>
+        <element name="Model" positionX="117.62109375" positionY="-169.703125" width="128" height="178"/>
         <element name="User" positionX="0" positionY="117" width="128" height="88"/>
     </elements>
 </model>

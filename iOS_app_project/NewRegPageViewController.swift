@@ -85,7 +85,6 @@ class NewRegPageViewController: UIViewController, UINavigationControllerDelegate
                         newModel.email = userEmailTextField.text
                         newModel.phone = userPhoneTextField.text
                         try? cont.save()
-                        fallthrough
                     }
                     //self.performSegue(withIdentifier: "toTabBar", sender: self)
                 case 1:
@@ -99,19 +98,17 @@ class NewRegPageViewController: UIViewController, UINavigationControllerDelegate
                         newMaster.masterOccupation = masterOccupationTextField.text
                         newMaster.masterCode = masterCodeTextField.text
                         try? cont.save()
-                        fallthrough
                     }
                     //self.performSegue(withIdentifier: "toTabBar", sender: self)
-                default:
-                    if let cont = context{
-                        let newUser = User(context: cont)
-                        newUser.login = userLoginTextField.text
-                        newUser.password = userPasswordTextField.text
-                        newUser.user_type = userType
-                        try? cont.save()
-                        self.performSegue(withIdentifier: "toTabBar", sender: self)
-                    }
-                    
+                default: break
+                }
+                if let cont = context{
+                    let newUser = User(context: cont)
+                    newUser.login = userLoginTextField.text
+                    newUser.password = userPasswordTextField.text
+                    newUser.user_type = userType
+                    try? cont.save()
+                    self.performSegue(withIdentifier: "toTabBar", sender: self)
                 }
                 
             }

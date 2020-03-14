@@ -35,6 +35,9 @@ class LoginPageViewController: UIViewController {
             for user in result {
                 print(user.login!)
                 if(emailOutlet.text == user.login && passwordOutlet.text == user.password){
+                    print(user.login)
+                    print(user.password)
+                    print(user.user_type)
                     print("nice")
                     self.performSegue(withIdentifier: "goToTabPage", sender: self)
                 }
