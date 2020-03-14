@@ -4,8 +4,13 @@
         <attribute name="adress" optional="YES" attributeType="String"/>
         <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="cash_card" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="masterclass" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="login" optional="YES" attributeType="String"/>
+        <attribute name="masterCode" optional="YES" attributeType="String"/>
+        <attribute name="masterOccupation" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
         <attribute name="rating" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="sex" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
     </entity>
@@ -22,21 +27,23 @@
     <entity name="Model" representedClassName="Model" syncable="YES" codeGenerationType="class">
         <attribute name="adress" optional="YES" attributeType="String"/>
         <attribute name="age" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="login" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
-        <attribute name="rating" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="phone" optional="YES" attributeType="String"/>
         <attribute name="sex" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
     </entity>
     <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
-        <attribute name="email" optional="YES" attributeType="String"/>
         <attribute name="login" optional="YES" attributeType="String"/>
         <attribute name="password" optional="YES" attributeType="String"/>
-        <attribute name="phone" optional="YES" attributeType="String"/>
+        <attribute name="user_type" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Master" positionX="-63" positionY="-18" width="128" height="148"/>
+        <element name="Master" positionX="-63" positionY="-18" width="128" height="223"/>
         <element name="Masterclass" positionX="-18" positionY="81" width="128" height="148"/>
         <element name="Masters_account" positionX="-36" positionY="72" width="128" height="43"/>
-        <element name="Model" positionX="-54" positionY="45" width="128" height="118"/>
-        <element name="User" positionX="0" positionY="117" width="128" height="103"/>
+        <element name="Model" positionX="117.62109375" positionY="-169.703125" width="128" height="163"/>
+        <element name="User" positionX="0" positionY="117" width="128" height="88"/>
     </elements>
 </model>

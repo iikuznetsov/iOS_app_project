@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IS1-hO-4go">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IS1-hO-4go">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -471,10 +471,10 @@
             </objects>
             <point key="canvasLocation" x="2067" y="258"/>
         </scene>
-        <!--Профиль-->
+        <!--Profile-->
         <scene sceneID="rsx-wl-Poh">
             <objects>
-                <viewController id="bhW-lX-Jss" sceneMemberID="viewController">
+                <viewController id="bhW-lX-Jss" userLabel="Profile" customClass="ProfileViewController" customModule="FreeModel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ors-zm-Rds">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -620,6 +620,12 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Профиль" image="person" catalog="system" id="URJ-bY-hff"/>
                     <connections>
+                        <outlet property="emailLabel" destination="QEg-VA-Adq" id="v1O-56-hbZ"/>
+                        <outlet property="loginLabel" destination="1Or-JP-Fah" id="NCF-KG-Hw2"/>
+                        <outlet property="nameLabel" destination="ZvW-KG-gDe" id="MGS-88-5wS"/>
+                        <outlet property="passwordLabel" destination="uCh-QG-gpy" id="DX3-rp-Uzg"/>
+                        <outlet property="phoneLabel" destination="ZYK-ht-Fh4" id="kRi-Ux-7Em"/>
+                        <outlet property="surnameLabel" destination="BEg-1y-THo" id="u9r-2G-2Aq"/>
                         <segue destination="Fou-aR-rO3" kind="show" identifier="goToEditingProfilePage" id="VAc-ai-3Tr"/>
                     </connections>
                 </viewController>
@@ -1121,7 +1127,7 @@
                         <outlet property="masterOccupationTextField" destination="Rnd-E2-fVc" id="wO2-GI-e1T"/>
                         <outlet property="photoImageView" destination="qVW-Qy-iXS" id="7Fd-IF-Hh4"/>
                         <outlet property="segmentedControl" destination="Mp5-2Y-j1q" id="JIX-3T-Odh"/>
-                        <outlet property="userEmailTextField" destination="Uq4-yh-oxh" id="Awc-3A-PVs"/>
+                        <outlet property="userEmailTextField" destination="Uq4-yh-oxh" id="nIs-Kx-0dz"/>
                         <outlet property="userLoginTextField" destination="akG-pt-DGX" id="Eoa-mp-68q"/>
                         <outlet property="userPasswordTextField" destination="qCj-J5-Obm" id="meY-Zt-gzj"/>
                         <outlet property="userPhoneTextField" destination="BLW-DE-Ip6" id="LkP-zl-AG8"/>

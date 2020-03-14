@@ -26,6 +26,7 @@ class NewRegPageViewController: UIViewController, UINavigationControllerDelegate
     
     @IBOutlet weak var userEmailTextField: UITextField!
     
+    
     @IBOutlet weak var userPhoneTextField: UITextField!
     
     @IBOutlet weak var masterCodeTextField: UITextField!
@@ -57,10 +58,15 @@ class NewRegPageViewController: UIViewController, UINavigationControllerDelegate
         wrongDataAlert.addAction(okAction)
         var isDataOk = true
         if userLoginTextField.text != "" && userPasswordTextField.text != "" && userEmailTextField.text != "" && userPhoneTextField.text != "" {
+            if segmentedControl.selectedSegmentIndex == 1{
+                if masterOccupationTextField.text == "" && masterCodeTextField.text == "" {
+                    isDataOk = false
+                }
+            }
             let request = User.fetchRequest() as NSFetchRequest<User>
             if let result = try? context?.fetch(request) {
                 for user in result {
-                    if userLoginTextField.text == user.login || userEmailTextField.text == user.email {
+                    if user.login == userLoginTextField.text {
                         self.present(wrongDataAlert, animated: true)
                         isDataOk = false
                         break;
@@ -68,19 +74,46 @@ class NewRegPageViewController: UIViewController, UINavigationControllerDelegate
                 }
             }
             if isDataOk{
-                if let cont = context {
-                    let newUser = User(context: cont)
-                    newUser.login = userLoginTextField.text
-                    newUser.password = userPasswordTextField.text
-                    newUser.email = userEmailTextField.text
-                    newUser.phone = userPhoneTextField.text
-                    if segmentedControl.selectedSegmentIndex == 1{
-                        //masterCodeTextField.text
-                        //masterOccupationTextField.text
+                var userType = ""
+                switch(segmentedControl.selectedSegmentIndex){
+                case 0:
+                    userType = "Model"
+                    if let cont = context {
+                        let newModel = Model(context: cont)
+                        newModel.login = userLoginTextField.text
+                        newModel.password = userPasswordTextField.text
+                        newModel.email = userEmailTextField.text
+                        newModel.phone = userPhoneTextField.text
+                        try? cont.save()
+                        fallthrough
                     }
-                    try? cont.save()
+                    //self.performSegue(withIdentifier: "toTabBar", sender: self)
+                case 1:
+                    userType = "Master"
+                    if let cont = context {
+                        let newMaster = Master(context: cont)
+                        newMaster.login = userLoginTextField.text
+                        newMaster.password = userPasswordTextField.text
+                        newMaster.email = userEmailTextField.text
+                        newMaster.phone = userPhoneTextField.text
+                        newMaster.masterOccupation = masterOccupationTextField.text
+                        newMaster.masterCode = masterCodeTextField.text
+                        try? cont.save()
+                        fallthrough
+                    }
+                    //self.performSegue(withIdentifier: "toTabBar", sender: self)
+                default:
+                    if let cont = context{
+                        let newUser = User(context: cont)
+                        newUser.login = userLoginTextField.text
+                        newUser.password = userPasswordTextField.text
+                        newUser.user_type = userType
+                        try? cont.save()
+                        self.performSegue(withIdentifier: "toTabBar", sender: self)
+                    }
+                    
                 }
-                self.performSegue(withIdentifier: "toTabBar", sender: self)
+                
             }
         } else {
                 let notAllDataAlert = UIAlertController(title: "Missing data", message: "Fill all fields", preferredStyle: UIAlertController.Style.alert)
