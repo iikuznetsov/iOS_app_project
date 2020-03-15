@@ -23,21 +23,23 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var phoneLabel: UILabel!
     
-    let currentUserLogin: String = "12345"
+    let currentUserLogin: String = "masha"
     
-    var currentUser: signedInUser = signedInUser(login: "", password: "", email: "", phone: "", user_type: "Model")
+    var currentUser: signedInUser = signedInUser(login: "", password: "", email: "", phone: "", user_type: "Модель")
     
     var context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = #colorLiteral(red: 0.7984377676, green: 0.846851587, blue: 0.9890239835, alpha: 1)
+        
         let request = User.fetchRequest() as NSFetchRequest<User>
         if let result = try? context?.fetch(request) {
             for user in result {
                 if user.login == currentUserLogin {
                     switch user.user_type {
-                        case "Model":
+                        case "Модель":
                         let request = Model.fetchRequest() as NSFetchRequest<Model>
                         if let result = try? context?.fetch(request) {
                             for model in result {

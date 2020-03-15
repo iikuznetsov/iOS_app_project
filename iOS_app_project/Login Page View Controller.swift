@@ -10,12 +10,16 @@ import Foundation
 import CoreData
 import UIKit
 
-class LoginPageViewController: UIViewController {
+class LoginPageViewController: UIViewController, UITextFieldDelegate {
     var context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Pink.jpg")!)
+        
+        self.view.backgroundColor = #colorLiteral(red: 0.7984377676, green: 0.846851587, blue: 0.9890239835, alpha: 1)
+        
+        self.emailOutlet.delegate = self
+        self.passwordOutlet.delegate = self
         // Do any additional setup after loading th
     }
     @IBOutlet weak var emailOutlet: UITextField!
@@ -23,10 +27,13 @@ class LoginPageViewController: UIViewController {
     @IBOutlet weak var passwordOutlet: UITextField!
     
     @IBAction func goToRegPageAction(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "goToRegPage", sender: self)
+        self.performSegue(withIdentifier: "goToReg", sender: self)
     }
     
-    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
     
     @IBAction func tryEnterAction(_ sender: UIButton) {
         print("ass")

@@ -14,6 +14,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        self.view.backgroundColor = #colorLiteral(red: 0.7984377676, green: 0.846851587, blue: 0.9890239835, alpha: 1)
         //self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Фон копия.jpg")!)
         // Do any additional setup after loading th
         

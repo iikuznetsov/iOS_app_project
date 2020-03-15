@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		210EC15F23A225370031045D /* Фон копия.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 210EC15E23A225370031045D /* Фон копия.jpg */; };
 		210EC16523A22F850031045D /* Login Page View Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210EC16423A22F850031045D /* Login Page View Controller.swift */; };
 		210EC1A123A2335C0031045D /* icon167.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 210EC16D23A2335C0031045D /* icon167.jpg */; };
 		210EC1A223A2335C0031045D /* icon29.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 210EC16E23A2335C0031045D /* icon29.jpg */; };
@@ -23,11 +22,8 @@
 		210EC1C723A2335C0031045D /* icon20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 210EC19323A2335C0031045D /* icon20.jpg */; };
 		210EC1CE23A2335C0031045D /* icon180.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 210EC19A23A2335C0031045D /* icon180.jpg */; };
 		210EC1D023A234F40031045D /* Лого.png in Resources */ = {isa = PBXBuildFile; fileRef = 210EC1CF23A234F40031045D /* Лого.png */; };
-		213516E923A2AB220046AC75 /* Yellow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 213516E423A2AB220046AC75 /* Yellow.jpg */; };
-		213516EA23A2AB220046AC75 /* Light red.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 213516E523A2AB220046AC75 /* Light red.jpg */; };
-		213516EB23A2AB220046AC75 /* Purple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 213516E623A2AB220046AC75 /* Purple.jpg */; };
-		213516EC23A2AB220046AC75 /* Blue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 213516E723A2AB220046AC75 /* Blue.jpg */; };
-		213516EF23A2AB840046AC75 /* Pink.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 213516EE23A2AB840046AC75 /* Pink.jpg */; };
+		21323BD7241DAC010081D8A6 /* logotext.png in Resources */ = {isa = PBXBuildFile; fileRef = 21323BD6241DAC010081D8A6 /* logotext.png */; };
+		21323BDF241DBAF60081D8A6 /* Лого2.png in Resources */ = {isa = PBXBuildFile; fileRef = 21323BDE241DBAF60081D8A6 /* Лого2.png */; };
 		21D880C5241583F700FBE60E /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D880C4241583F700FBE60E /* MainPageViewController.swift */; };
 		21D880C92415855900FBE60E /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D880C82415855900FBE60E /* MainPage.swift */; };
 		21D880CB241585D600FBE60E /* MainPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D880CA241585D600FBE60E /* MainPageCollectionViewCell.swift */; };
@@ -53,7 +49,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		210EC15E23A225370031045D /* Фон копия.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Фон копия.jpg"; sourceTree = "<group>"; };
 		210EC16423A22F850031045D /* Login Page View Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login Page View Controller.swift"; sourceTree = "<group>"; };
 		210EC16D23A2335C0031045D /* icon167.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon167.jpg; sourceTree = "<group>"; };
 		210EC16E23A2335C0031045D /* icon29.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon29.jpg; sourceTree = "<group>"; };
@@ -69,11 +64,8 @@
 		210EC19323A2335C0031045D /* icon20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon20.jpg; sourceTree = "<group>"; };
 		210EC19A23A2335C0031045D /* icon180.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon180.jpg; sourceTree = "<group>"; };
 		210EC1CF23A234F40031045D /* Лого.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Лого.png"; sourceTree = "<group>"; };
-		213516E423A2AB220046AC75 /* Yellow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Yellow.jpg; sourceTree = "<group>"; };
-		213516E523A2AB220046AC75 /* Light red.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Light red.jpg"; sourceTree = "<group>"; };
-		213516E623A2AB220046AC75 /* Purple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Purple.jpg; sourceTree = "<group>"; };
-		213516E723A2AB220046AC75 /* Blue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Blue.jpg; sourceTree = "<group>"; };
-		213516EE23A2AB840046AC75 /* Pink.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Pink.jpg; sourceTree = "<group>"; };
+		21323BD6241DAC010081D8A6 /* logotext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logotext.png; sourceTree = "<group>"; };
+		21323BDE241DBAF60081D8A6 /* Лого2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Лого2.png"; sourceTree = "<group>"; };
 		21D880C4241583F700FBE60E /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		21D880C82415855900FBE60E /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		21D880CA241585D600FBE60E /* MainPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -114,9 +106,9 @@
 		210EC15D23A225190031045D /* Pics */ = {
 			isa = PBXGroup;
 			children = (
-				213516E323A2AAC70046AC75 /* Colour Background */,
+				21323BD6241DAC010081D8A6 /* logotext.png */,
+				21323BDE241DBAF60081D8A6 /* Лого2.png */,
 				210EC1CF23A234F40031045D /* Лого.png */,
-				210EC15E23A225370031045D /* Фон копия.jpg */,
 			);
 			path = Pics;
 			sourceTree = "<group>";
@@ -139,18 +131,6 @@
 				210EC19A23A2335C0031045D /* icon180.jpg */,
 			);
 			path = Icons;
-			sourceTree = "<group>";
-		};
-		213516E323A2AAC70046AC75 /* Colour Background */ = {
-			isa = PBXGroup;
-			children = (
-				213516EE23A2AB840046AC75 /* Pink.jpg */,
-				213516E723A2AB220046AC75 /* Blue.jpg */,
-				213516E523A2AB220046AC75 /* Light red.jpg */,
-				213516E623A2AB220046AC75 /* Purple.jpg */,
-				213516E423A2AB220046AC75 /* Yellow.jpg */,
-			);
-			path = "Colour Background";
 			sourceTree = "<group>";
 		};
 		21D880CC241585F400FBE60E /* Main Page */ = {
@@ -273,26 +253,22 @@
 				210EC1A423A2335C0031045D /* icon1024.jpg in Resources */,
 				210EC1B423A2335C0031045D /* icon58.jpg in Resources */,
 				210EC1CE23A2335C0031045D /* icon180.jpg in Resources */,
-				213516E923A2AB220046AC75 /* Yellow.jpg in Resources */,
 				52375E95239C6A060083EAB9 /* Assets.xcassets in Resources */,
 				210EC1A223A2335C0031045D /* icon29.jpg in Resources */,
 				52375E90239C69F40083EAB9 /* Main.storyboard in Resources */,
 				210EC1BB23A2335C0031045D /* icon80.jpg in Resources */,
-				213516EC23A2AB220046AC75 /* Blue.jpg in Resources */,
 				210EC1AB23A2335C0031045D /* icon60.jpg in Resources */,
 				210EC1D023A234F40031045D /* Лого.png in Resources */,
-				213516EA23A2AB220046AC75 /* Light red.jpg in Resources */,
-				213516EF23A2AB840046AC75 /* Pink.jpg in Resources */,
 				210EC1B623A2335C0031045D /* icon40.jpg in Resources */,
 				210EC1C723A2335C0031045D /* icon20.jpg in Resources */,
+				21323BD7241DAC010081D8A6 /* logotext.png in Resources */,
+				21323BDF241DBAF60081D8A6 /* Лого2.png in Resources */,
 				9408857223A7BE6600AFA367 /* data.txt in Resources */,
 				210EC1C223A2335C0031045D /* icon87.jpg in Resources */,
 				210EC1C323A2335C0031045D /* icon120.jpg in Resources */,
-				210EC15F23A225370031045D /* Фон копия.jpg in Resources */,
 				210EC1C623A2335C0031045D /* icon152.jpg in Resources */,
 				210EC1A123A2335C0031045D /* icon167.jpg in Resources */,
 				210EC1AD23A2335C0031045D /* icon76.jpg in Resources */,
-				213516EB23A2AB220046AC75 /* Purple.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,13 +441,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H9G9M9M399;
+				DEVELOPMENT_TEAM = LLDZY8HPDS;
 				INFOPLIST_FILE = iOS_app_project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Igor.iOS-app-project";
+				PRODUCT_BUNDLE_IDENTIFIER = com.masha.iosappproject;
 				PRODUCT_NAME = FreeModel;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -483,13 +459,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H9G9M9M399;
+				DEVELOPMENT_TEAM = LLDZY8HPDS;
 				INFOPLIST_FILE = iOS_app_project/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Igor.iOS-app-project";
+				PRODUCT_BUNDLE_IDENTIFIER = com.masha.iosappproject;
 				PRODUCT_NAME = FreeModel;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

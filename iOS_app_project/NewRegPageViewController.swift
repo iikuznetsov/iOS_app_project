@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class NewRegPageViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+class NewRegPageViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate {
     var context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
     
     
@@ -77,7 +77,7 @@ class NewRegPageViewController: UIViewController, UINavigationControllerDelegate
                 var userType = ""
                 switch(segmentedControl.selectedSegmentIndex){
                 case 0:
-                    userType = "Model"
+                    userType = "Модель"
                     if let cont = context {
                         let newModel = Model(context: cont)
                         newModel.login = userLoginTextField.text
@@ -88,7 +88,7 @@ class NewRegPageViewController: UIViewController, UINavigationControllerDelegate
                     }
                     //self.performSegue(withIdentifier: "toTabBar", sender: self)
                 case 1:
-                    userType = "Master"
+                    userType = "Мастер"
                     if let cont = context {
                         let newMaster = Master(context: cont)
                         newMaster.login = userLoginTextField.text
@@ -153,11 +153,22 @@ class NewRegPageViewController: UIViewController, UINavigationControllerDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.view.backgroundColor = #colorLiteral(red: 0.7984377676, green: 0.846851587, blue: 0.9890239835, alpha: 1)
+        self.UserView.backgroundColor = #colorLiteral(red: 0.7984377676, green: 0.846851587, blue: 0.9890239835, alpha: 1)
+        self.MasterView.backgroundColor = #colorLiteral(red: 0.7984377676, green: 0.846851587, blue: 0.9890239835, alpha: 1)
+        
+        
+        self.userLoginTextField.delegate = self
+        self.userPasswordTextField.delegate = self
+        self.userEmailTextField.delegate = self
+        self.userPhoneTextField.delegate = self
     }
     
-
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
     /*
     // MARK: - Navigation
 
