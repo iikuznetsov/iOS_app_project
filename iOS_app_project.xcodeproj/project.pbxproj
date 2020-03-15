@@ -24,6 +24,7 @@
 		210EC1D023A234F40031045D /* Лого.png in Resources */ = {isa = PBXBuildFile; fileRef = 210EC1CF23A234F40031045D /* Лого.png */; };
 		21323BD7241DAC010081D8A6 /* logotext.png in Resources */ = {isa = PBXBuildFile; fileRef = 21323BD6241DAC010081D8A6 /* logotext.png */; };
 		21323BDF241DBAF60081D8A6 /* Лого2.png in Resources */ = {isa = PBXBuildFile; fileRef = 21323BDE241DBAF60081D8A6 /* Лого2.png */; };
+		21323BE1241DD2DA0081D8A6 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21323BE0241DD2DA0081D8A6 /* PostCell.swift */; };
 		21D880C5241583F700FBE60E /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D880C4241583F700FBE60E /* MainPageViewController.swift */; };
 		21D880C92415855900FBE60E /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D880C82415855900FBE60E /* MainPage.swift */; };
 		21D880CB241585D600FBE60E /* MainPageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D880CA241585D600FBE60E /* MainPageCollectionViewCell.swift */; };
@@ -66,6 +67,7 @@
 		210EC1CF23A234F40031045D /* Лого.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Лого.png"; sourceTree = "<group>"; };
 		21323BD6241DAC010081D8A6 /* logotext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logotext.png; sourceTree = "<group>"; };
 		21323BDE241DBAF60081D8A6 /* Лого2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Лого2.png"; sourceTree = "<group>"; };
+		21323BE0241DD2DA0081D8A6 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		21D880C4241583F700FBE60E /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		21D880C82415855900FBE60E /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		21D880CA241585D600FBE60E /* MainPageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				52375E91239C69F40083EAB9 /* iOS_app_project.xcdatamodeld */,
 				946BC4AA241684FD00FBCFA1 /* NewRegPageViewController.swift */,
 				ACBA0963241A615E0058DE2B /* SearchTabViewController.swift */,
+				21323BE0241DD2DA0081D8A6 /* PostCell.swift */,
 				9428FC49241C512000C8DBB1 /* ProfileViewController.swift */,
 				94E1CF1A241D8481002DD769 /* EditingProfileViewController.swift */,
 				94E1CF1C241D87F5002DD769 /* signedInUser.swift */,
@@ -291,6 +294,7 @@
 				21D880D62415894C00FBE60E /* TabledContentCollectionViewDelegate.swift in Sources */,
 				52375E89239C69F40083EAB9 /* AppDelegate.swift in Sources */,
 				946BC4AB241684FD00FBCFA1 /* NewRegPageViewController.swift in Sources */,
+				21323BE1241DD2DA0081D8A6 /* PostCell.swift in Sources */,
 				210EC16523A22F850031045D /* Login Page View Controller.swift in Sources */,
 				21D880D52415894C00FBE60E /* DefaultGriddedContentCollectionViewDelegate.swift in Sources */,
 				21D880D72415894C00FBE60E /* DefaultCollectionViewDelegate.swift in Sources */,
