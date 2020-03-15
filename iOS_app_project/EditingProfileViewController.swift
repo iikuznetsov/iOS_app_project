@@ -62,6 +62,25 @@ class EditingProfileViewController: UIViewController {
             resultsUser?.first?.password = passwordTextField.text
             try? cont.save()
             }
+        case "Мастер":
+            if let cont = context {
+            let req = NSFetchRequest<Master>(entityName: "Master")
+            req.predicate = NSPredicate(format: "login == %@", currentUser.login)
+            let results = try? cont.fetch(req)
+            results?.first?.password = passwordTextField.text
+            results?.first?.email = emailTextField.text
+            results?.first?.phone = phoneTextField.text
+            results?.first?.name = nameTextField.text
+            results?.first?.surname = surnameTextField.text
+            
+            let reqUser = NSFetchRequest<User>(entityName: "User")
+            reqUser.predicate = NSPredicate(format: "login == %@", currentUser.login)
+            let resultsUser = try? cont.fetch(reqUser)
+            resultsUser?.first?.password = passwordTextField.text
+            try? cont.save()
+            }
+            
+            
         default: break
         }
     }

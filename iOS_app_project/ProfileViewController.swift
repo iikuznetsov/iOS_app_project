@@ -23,7 +23,7 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var phoneLabel: UILabel!
     
-    let currentUserLogin: String = "masha"
+    let currentUserLogin: String = "max"
     
     var currentUser: signedInUser = signedInUser(login: "", password: "", email: "", phone: "", user_type: "Модель")
     
@@ -33,7 +33,21 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = #colorLiteral(red: 0.7984377676, green: 0.846851587, blue: 0.9890239835, alpha: 1)
-        
+        loadFromCoreData()
+    }
+    
+    
+    
+    @IBAction func editButtonAction(_ sender: Any) {
+        self.performSegue(withIdentifier: "goToEditPage", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as? EditingProfileViewController
+        vc?.currentUser = currentUser
+    }
+    
+    func loadFromCoreData(){
         let request = User.fetchRequest() as NSFetchRequest<User>
         if let result = try? context?.fetch(request) {
             for user in result {
@@ -53,20 +67,11 @@ class ProfileViewController: UIViewController {
                                 }
                             }
                         }
-                    default : break
+                        default : break
                     }
                 }
             }
         }
-    }
-    
-    @IBAction func editButtonAction(_ sender: Any) {
-        self.performSegue(withIdentifier: "goToEditPage", sender: self)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as? EditingProfileViewController
-        vc?.currentUser = currentUser
     }
     
     /*

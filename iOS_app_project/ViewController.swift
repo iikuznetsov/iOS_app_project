@@ -30,6 +30,14 @@ class ViewController: UIViewController {
             try? cont.save()
         }*/
         
+        if let cont = context {
+             let post = Post(context: cont)
+            post.title = "Окрашивание"
+            post.content = "Приглашаем на профессиональное окрашивание (по цене материалов), ищем моделей готовых к экспериментам и творческому подходу к процессу"
+            post.date = Date(timeIntervalSinceNow: 100)
+             try? cont.save()
+         }
+        
         //Delete data
         /*
         let req = NSFetchRequest<User>(entityName: "User")

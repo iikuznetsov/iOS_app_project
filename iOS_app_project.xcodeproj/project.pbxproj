@@ -22,7 +22,6 @@
 		210EC1C723A2335C0031045D /* icon20.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 210EC19323A2335C0031045D /* icon20.jpg */; };
 		210EC1CE23A2335C0031045D /* icon180.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 210EC19A23A2335C0031045D /* icon180.jpg */; };
 		210EC1D023A234F40031045D /* Лого.png in Resources */ = {isa = PBXBuildFile; fileRef = 210EC1CF23A234F40031045D /* Лого.png */; };
-		21323BD7241DAC010081D8A6 /* logotext.png in Resources */ = {isa = PBXBuildFile; fileRef = 21323BD6241DAC010081D8A6 /* logotext.png */; };
 		21323BDF241DBAF60081D8A6 /* Лого2.png in Resources */ = {isa = PBXBuildFile; fileRef = 21323BDE241DBAF60081D8A6 /* Лого2.png */; };
 		21323BE1241DD2DA0081D8A6 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21323BE0241DD2DA0081D8A6 /* PostCell.swift */; };
 		21D880C5241583F700FBE60E /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D880C4241583F700FBE60E /* MainPageViewController.swift */; };
@@ -65,7 +64,6 @@
 		210EC19323A2335C0031045D /* icon20.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon20.jpg; sourceTree = "<group>"; };
 		210EC19A23A2335C0031045D /* icon180.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon180.jpg; sourceTree = "<group>"; };
 		210EC1CF23A234F40031045D /* Лого.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Лого.png"; sourceTree = "<group>"; };
-		21323BD6241DAC010081D8A6 /* logotext.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logotext.png; sourceTree = "<group>"; };
 		21323BDE241DBAF60081D8A6 /* Лого2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Лого2.png"; sourceTree = "<group>"; };
 		21323BE0241DD2DA0081D8A6 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		21D880C4241583F700FBE60E /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
@@ -108,7 +106,6 @@
 		210EC15D23A225190031045D /* Pics */ = {
 			isa = PBXGroup;
 			children = (
-				21323BD6241DAC010081D8A6 /* logotext.png */,
 				21323BDE241DBAF60081D8A6 /* Лого2.png */,
 				210EC1CF23A234F40031045D /* Лого.png */,
 			);
@@ -264,7 +261,6 @@
 				210EC1D023A234F40031045D /* Лого.png in Resources */,
 				210EC1B623A2335C0031045D /* icon40.jpg in Resources */,
 				210EC1C723A2335C0031045D /* icon20.jpg in Resources */,
-				21323BD7241DAC010081D8A6 /* logotext.png in Resources */,
 				21323BDF241DBAF60081D8A6 /* Лого2.png in Resources */,
 				9408857223A7BE6600AFA367 /* data.txt in Resources */,
 				210EC1C223A2335C0031045D /* icon87.jpg in Resources */,
