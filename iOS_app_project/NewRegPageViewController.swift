@@ -201,6 +201,46 @@ class NewRegPageViewController: UIViewController, UINavigationControllerDelegate
         textField.resignFirstResponder()
         return true
     }
+    
+    
+    @IBOutlet weak var loginCheckBoxImageView: UIImageView!
+    
+    @IBOutlet weak var passwordCheckBoxImageView: UIImageView!
+    
+    @IBOutlet weak var emailCheckBoxImageView: UIImageView!
+    
+    @IBOutlet weak var phoneCheckBoxImageView: UIImageView!
+    
+    @IBOutlet weak var occupationCheckBoxImageView: UIImageView!
+    
+    @IBOutlet weak var masterCodeCheckBoxImageView: UIImageView!
+    
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        switch textField{
+        case userLoginTextField:
+            loginCheckBoxImageView.image = UIImage(systemName: "checkmark")
+            loginCheckBoxImageView.tintColor = #colorLiteral(red: 0.4412127807, green: 0.7037000317, blue: 0.4492821145, alpha: 1)
+            //loginCheckBoxImageView.tintColor = #colorLiteral(red: 0.7546754728, green: 0.2473161223, blue: 0.2139258107, alpha: 1)
+        case userPasswordTextField:
+            passwordCheckBoxImageView.image = UIImage(systemName: "checkmark")
+            passwordCheckBoxImageView.tintColor = #colorLiteral(red: 0.4412127807, green: 0.7037000317, blue: 0.4492821145, alpha: 1)
+        case userEmailTextField:
+            emailCheckBoxImageView.image = UIImage(systemName: "checkmark")
+            emailCheckBoxImageView.tintColor = #colorLiteral(red: 0.4412127807, green: 0.7037000317, blue: 0.4492821145, alpha: 1)
+        case userPhoneTextField:
+            phoneCheckBoxImageView.image = UIImage(systemName: "checkmark")
+            phoneCheckBoxImageView.tintColor = #colorLiteral(red: 0.4412127807, green: 0.7037000317, blue: 0.4492821145, alpha: 1)
+        case masterOccupationTextField:
+            occupationCheckBoxImageView.image = UIImage(systemName: "checkmark")
+            occupationCheckBoxImageView.tintColor = #colorLiteral(red: 0.4412127807, green: 0.7037000317, blue: 0.4492821145, alpha: 1)
+        case masterCodeTextField:
+            masterCodeCheckBoxImageView.image = UIImage(systemName: "checkmark")
+            masterCodeCheckBoxImageView.tintColor = #colorLiteral(red: 0.4412127807, green: 0.7037000317, blue: 0.4492821145, alpha: 1)
+            //последние два не работают, хз почему, надо поправить
+        default: break
+        } //добавить проверку на соответствие формату строки для ячейки
+    }
     /*
     // MARK: - Navigation
 
