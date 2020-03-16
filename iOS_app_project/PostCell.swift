@@ -12,7 +12,7 @@ class PostCell: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     
-    @IBOutlet weak var contentScrollView: UIScrollView!
+    @IBOutlet weak var contentTextView: UITextView!
     
     @IBOutlet weak var postImageView: UIImageView!
 }

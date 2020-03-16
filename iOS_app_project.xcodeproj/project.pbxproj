@@ -40,11 +40,13 @@
 		52375E93239C69F40083EAB9 /* iOS_app_project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 52375E91239C69F40083EAB9 /* iOS_app_project.xcdatamodeld */; };
 		52375E95239C6A060083EAB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52375E94239C6A060083EAB9 /* Assets.xcassets */; };
 		52375E98239C6A060083EAB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52375E96239C6A060083EAB9 /* LaunchScreen.storyboard */; };
-		9408857223A7BE6600AFA367 /* data.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9408857123A7BE6600AFA367 /* data.txt */; };
 		9428FC4A241C512000C8DBB1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9428FC49241C512000C8DBB1 /* ProfileViewController.swift */; };
 		946BC4AB241684FD00FBCFA1 /* NewRegPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946BC4AA241684FD00FBCFA1 /* NewRegPageViewController.swift */; };
 		94E1CF1B241D8481002DD769 /* EditingProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E1CF1A241D8481002DD769 /* EditingProfileViewController.swift */; };
 		94E1CF1D241D87F5002DD769 /* signedInUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E1CF1C241D87F5002DD769 /* signedInUser.swift */; };
+		94E44301241F9BD800086B09 /* appPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E44300241F9BD800086B09 /* appPost.swift */; };
+		94E44303241FAD0600086B09 /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = 94E44302241FAD0600086B09 /* posts.json */; };
+		94E44305241FAF9700086B09 /* InfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E44304241FAF9700086B09 /* InfoPageViewController.swift */; };
 		ACBA0965241A615E0058DE2B /* SearchTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACBA0963241A615E0058DE2B /* SearchTabViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -84,11 +86,13 @@
 		52375E94239C6A060083EAB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52375E97239C6A060083EAB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52375E99239C6A060083EAB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9408857123A7BE6600AFA367 /* data.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = data.txt; sourceTree = "<group>"; };
 		9428FC49241C512000C8DBB1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		946BC4AA241684FD00FBCFA1 /* NewRegPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRegPageViewController.swift; sourceTree = "<group>"; };
 		94E1CF1A241D8481002DD769 /* EditingProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingProfileViewController.swift; sourceTree = "<group>"; };
 		94E1CF1C241D87F5002DD769 /* signedInUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signedInUser.swift; sourceTree = "<group>"; };
+		94E44300241F9BD800086B09 /* appPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appPost.swift; sourceTree = "<group>"; };
+		94E44302241FAD0600086B09 /* posts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = posts.json; sourceTree = "<group>"; };
+		94E44304241FAF9700086B09 /* InfoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPageViewController.swift; sourceTree = "<group>"; };
 		ACBA0963241A615E0058DE2B /* SearchTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,7 +171,7 @@
 		52375E87239C69F40083EAB9 /* iOS_app_project */ = {
 			isa = PBXGroup;
 			children = (
-				9408857123A7BE6600AFA367 /* data.txt */,
+				94E44302241FAD0600086B09 /* posts.json */,
 				210EC16623A2335C0031045D /* Icons */,
 				210EC15D23A225190031045D /* Pics */,
 				52375E88239C69F40083EAB9 /* AppDelegate.swift */,
@@ -186,6 +190,8 @@
 				9428FC49241C512000C8DBB1 /* ProfileViewController.swift */,
 				94E1CF1A241D8481002DD769 /* EditingProfileViewController.swift */,
 				94E1CF1C241D87F5002DD769 /* signedInUser.swift */,
+				94E44300241F9BD800086B09 /* appPost.swift */,
+				94E44304241FAF9700086B09 /* InfoPageViewController.swift */,
 			);
 			path = iOS_app_project;
 			sourceTree = "<group>";
@@ -257,12 +263,12 @@
 				210EC1A223A2335C0031045D /* icon29.jpg in Resources */,
 				52375E90239C69F40083EAB9 /* Main.storyboard in Resources */,
 				210EC1BB23A2335C0031045D /* icon80.jpg in Resources */,
+				94E44303241FAD0600086B09 /* posts.json in Resources */,
 				210EC1AB23A2335C0031045D /* icon60.jpg in Resources */,
 				210EC1D023A234F40031045D /* Лого.png in Resources */,
 				210EC1B623A2335C0031045D /* icon40.jpg in Resources */,
 				210EC1C723A2335C0031045D /* icon20.jpg in Resources */,
 				21323BDF241DBAF60081D8A6 /* Лого2.png in Resources */,
-				9408857223A7BE6600AFA367 /* data.txt in Resources */,
 				210EC1C223A2335C0031045D /* icon87.jpg in Resources */,
 				210EC1C323A2335C0031045D /* icon120.jpg in Resources */,
 				210EC1C623A2335C0031045D /* icon152.jpg in Resources */,
@@ -281,6 +287,7 @@
 				52375E8D239C69F40083EAB9 /* ViewController.swift in Sources */,
 				94E1CF1D241D87F5002DD769 /* signedInUser.swift in Sources */,
 				21D880C5241583F700FBE60E /* MainPageViewController.swift in Sources */,
+				94E44305241FAF9700086B09 /* InfoPageViewController.swift in Sources */,
 				21D880CB241585D600FBE60E /* MainPageCollectionViewCell.swift in Sources */,
 				94E1CF1B241D8481002DD769 /* EditingProfileViewController.swift in Sources */,
 				52375E93239C69F40083EAB9 /* iOS_app_project.xcdatamodeld in Sources */,
@@ -297,6 +304,7 @@
 				21D880D02415885F00FBE60E /* MainPageProvider.swift in Sources */,
 				52375E8B239C69F40083EAB9 /* SceneDelegate.swift in Sources */,
 				21D880D82415894C00FBE60E /* CustomGriddedContentCollectionViewDelegate.swift in Sources */,
+				94E44301241F9BD800086B09 /* appPost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
