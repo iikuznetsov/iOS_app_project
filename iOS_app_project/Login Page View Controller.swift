@@ -17,7 +17,7 @@ class LoginPageViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
-        self.view.backgroundColor = #colorLiteral(red: 0.7984377676, green: 0.846851587, blue: 0.9890239835, alpha: 1)
+        self.view.backgroundColor = #colorLiteral(red: 0.8827067018, green: 0.9073504806, blue: 0.9886979461, alpha: 1)
         
         self.emailOutlet.delegate = self
         self.passwordOutlet.delegate = self
