@@ -42,8 +42,10 @@ class NewRegPageViewController: UIViewController, UINavigationControllerDelegate
         print(segmentedControl.selectedSegmentIndex)
         switch segmentedControl.selectedSegmentIndex {
         case 0:
+            logoImageView.image = UIImage(named: "logotext.png")
             MasterView.isHidden = true
         case 1:
+            logoImageView.image = UIImage(named: "logotext2.png")
             MasterView.isHidden = false
         default:
             break;
@@ -126,6 +128,23 @@ class NewRegPageViewController: UIViewController, UINavigationControllerDelegate
         masterReg()
     }
     
+    var isSecure: Bool = false
+    
+    
+    @IBOutlet weak var showPasswordButton: UIButton!
+    
+    @IBAction func showPasswordAction(_ sender: Any) {
+        if isSecure{
+            userPasswordTextField.isSecureTextEntry = false
+            showPasswordButton.setImage(UIImage(systemName: "eye"), for: .normal)
+            isSecure = false
+        } else{
+            userPasswordTextField.isSecureTextEntry = true
+            showPasswordButton.setImage(UIImage(systemName: "eye.slash"), for: .normal)
+            isSecure = true
+        }
+    }
+    
     func masterReg(){
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             let imagePicker = UIImagePickerController()
@@ -149,6 +168,8 @@ class NewRegPageViewController: UIViewController, UINavigationControllerDelegate
         photoImageView.image = image
     }*/
     
+    @IBOutlet weak var logoImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -163,7 +184,18 @@ class NewRegPageViewController: UIViewController, UINavigationControllerDelegate
         self.userPasswordTextField.delegate = self
         self.userEmailTextField.delegate = self
         self.userPhoneTextField.delegate = self
+        
+        logoImageView.image = UIImage(named: "logotext.png")
+        userPasswordTextField.isSecureTextEntry = true
+        
+        addTapGestureToHideKeyboard()
     }
+    
+    func addTapGestureToHideKeyboard() {
+            let tapGesture = UITapGestureRecognizer(target: view, action: #selector(view.endEditing))
+            view.addGestureRecognizer(tapGesture)
+    }
+    
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()

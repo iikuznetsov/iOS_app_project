@@ -21,8 +21,17 @@ class LoginPageViewController: UIViewController, UITextFieldDelegate {
         
         self.emailOutlet.delegate = self
         self.passwordOutlet.delegate = self
+        passwordOutlet.isSecureTextEntry = true
+        addTapGestureToHideKeyboard()
         // Do any additional setup after loading th
     }
+    
+    func addTapGestureToHideKeyboard() {
+            let tapGesture = UITapGestureRecognizer(target: view, action: #selector(view.endEditing))
+            view.addGestureRecognizer(tapGesture)
+    }
+    
+    
     @IBOutlet weak var emailOutlet: UITextField!
     
     @IBOutlet weak var passwordOutlet: UITextField!
