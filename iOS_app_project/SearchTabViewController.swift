@@ -20,6 +20,8 @@ class SearchTabViewController: UIViewController, UITableViewDataSource, UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = searchResultsTableView.dequeueReusableCell(withIdentifier: "PostCell", for: indexPath) as? PostCell
+        cell?.backgroundColor = #colorLiteral(red: 0.8827067018, green: 0.9073504806, blue: 0.9886979461, alpha: 1)
+        cell?.contentTextView.backgroundColor = #colorLiteral(red: 0.8827067018, green: 0.9073504806, blue: 0.9886979461, alpha: 1)
         let post = posts[indexPath.row]
         cell?.titleLabel.text = post.title
         cell?.contentTextView.text = post.content
@@ -30,7 +32,7 @@ class SearchTabViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 130
+        return 150
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -58,6 +60,7 @@ class SearchTabViewController: UIViewController, UITableViewDataSource, UITableV
         super.viewDidLoad()
         
         self.view.backgroundColor = #colorLiteral(red: 0.8827067018, green: 0.9073504806, blue: 0.9886979461, alpha: 1)
+        searchResultsTableView.backgroundColor = #colorLiteral(red: 0.8827067018, green: 0.9073504806, blue: 0.9886979461, alpha: 1)
 
         searchResultsTableView.delegate = self
         searchResultsTableView.dataSource = self
