@@ -55,7 +55,7 @@ class NewRegPageViewController: UIViewController, UINavigationControllerDelegate
     }
     
     @IBAction func regButtonAction(_ sender: Any) {
-        let wrongDataAlert = UIAlertController(title: "Wrong data", message: "This Login/email is already taken", preferredStyle: UIAlertController.Style.alert)
+        let wrongDataAlert = UIAlertController(title: "Неверные данные", message: "Такой логин и/или адрес электронной почты уже существует", preferredStyle: UIAlertController.Style.alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
             print("OK!")
         }
@@ -117,7 +117,7 @@ class NewRegPageViewController: UIViewController, UINavigationControllerDelegate
                 
             }
         } else {
-                let notAllDataAlert = UIAlertController(title: "Missing data", message: "Fill all fields", preferredStyle: UIAlertController.Style.alert)
+                let notAllDataAlert = UIAlertController(title: "Данных недостаточно", message: "Заполните все поля", preferredStyle: UIAlertController.Style.alert)
                 let okAction = UIAlertAction(title: "OK", style: .default) { (_) in
                     print("OK!")
                 }

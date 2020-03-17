@@ -20,13 +20,17 @@ class FilterViewController: ViewController {
     
     var filters: [Filter] = getFilters.all()
     
+    @IBOutlet weak var manButtonOutlet: UIButton!
     
     
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-    
+        manButtonOutlet.layer.cornerRadius = 30
+        manButtonOutlet.layer.borderWidth = 3.0
+        manButtonOutlet.layer.borderColor = #colorLiteral(red: 0.4412127807, green: 0.7037000317, blue: 0.4492821145, alpha: 1)
+        manButtonOutlet.clipsToBounds = true
         print(filters.count)
     }
     

@@ -1,47 +1,362 @@
 [
     {
-        "title": "Test",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "imagePath": "Лого.png"
+        "title": "Горчичный маникюр с веточкой",
+        "category": "Маникюр",
+        "content": "Приглашаем моделей на мастер-класс супермодного горчичного маникюра с веточкой в салон РукаЛицо!",
+        "imagePath": "nails1.jpg"
     },
     {
-        "title": "Test",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "imagePath": "Лого.png"
+        "title": "Акварельный маникюр",
+        "category": "Маникюр",
+        "content": "Красивый маникюр в акварельной технике - фирменная техника салона красоты Ноготочка. Оплата только за расходный материал!",
+        "imagePath": "nails2.jpg"
     },
     {
-        "title": "Test",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "imagePath": "Лого.png"
+        "title": "Нюдовый маникюр с блестками",
+        "category": "Маникюр",
+        "content": "Мастер-класс по классическому универсальному маникюру в бежевых тонах на все случаи жизни",
+        "imagePath": "nails3.jpg"
     },
     {
-        "title": "Test",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "imagePath": "Лого.png"
+        "title": "Коронавирусный маникюр",
+        "category": "Маникюр",
+        "content": "Ультрамодный маникюр с дизайном в стиле коронавируса с аппликацией - только в салоне Сдохни или Умри. Покрытие - шеллак, продержится в течение всего карантина!",
+        "imagePath": "nails4.jpg"
     },
     {
-        "title": "Test",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "imagePath": "Лого.png"
+        "title": "Креативная форма ногтей",
+        "category": "Маникюр",
+        "content": "Экстравагантная форма ногтей для не таких как все, мастер-класс пройдет в салоне красоты Когти",
+        "imagePath": "nails5.jpg"
     },
     {
-        "title": "Test",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "imagePath": "Лого.png"
+        "title": "Педикюр с блестками",
+        "category": "Педикюр",
+        "content": "Темно-синий маникюр с крупными блестками - мастер-класс на апрель 2020. Места ограничены!",
+        "imagePath": "pedik1.jpg"
     },
     {
-        "title": "Test2",
-        "content": "testtesttesttesttest123",
-        "imagePath": "Лого.png"
+        "title": "Изумрудный педикюр",
+        "category": "Педикюр",
+        "content": "Педикюр в изумрудных тонах, элегантный восточный стиль, салон Хезболла",
+        "imagePath": "pedik2.jpg"
     },
     {
-        "title": "Test3",
-        "content": "testtesttesttesttest1",
-        "imagePath": "Лого.png"
+        "title": "Матовый педикюр",
+        "category": "Педикюр",
+        "content": "Требуются модели на нюдовый матовый педикюр с втиркой из серебристых блесток для презентации продуктов, салон Блястяшка",
+        "imagePath": "pedik3.jpg"
     },
     {
-        "title": "Test4",
-        "content": "testtesttesttesttest5345366",
-        "imagePath": "Лого.png"
+        "title": "Мятный педикюр",
+        "category": "Педикюр",
+        "content": "Свежий весенний педикюр с геометрической аппликацией - набор моделей. Салон Свежесть Лугов",
+        "imagePath": "pedik4.jpg"
+    },
+    {
+        "title": "Прозрачный педикюр",
+        "category": "Педикюр",
+        "content": "Педикюр с прозрачным лаком и аппликацией с бусинами - необычный шикарный дизайн - для отработки техники приглашаем моделей. Салон красоты Руки-Крюки",
+        "imagePath": "pedik5.jpg"
+    },
+    {
+        "title": "Окрашивание русых волос",
+        "category": "Окрашивание классическое",
+        "content": "Приглашаем моделей с русыми волосами на процедуру окрашивания, результат - близкий к натуральному, живые блики, более яркий цвет. Запись через сайт салона Мама Довольна",
+        "imagePath": "kras1.jpg"
+    },
+    {
+        "title": "Закрашивание седины",
+        "category": "Окрашивание классическое",
+        "content": "Приглашаем моделей 40+ на процедуру маскировки седины - апробация новых техник. Студия красоты Бес в Ребро",
+        "imagePath": "kras2.jpg"
+    },
+    {
+        "title": "Осветление волос",
+        "category": "Окрашивание классическое",
+        "content": "Мастер-класс по радикальному осветлению - ждем в качестве моделей девушек с темным цветом волос. Салон Радикал",
+        "imagePath": "kras3.jpg"
+    },
+    {
+        "title": "Естественное мелирование",
+        "category": "Окрашивание классическое",
+        "content": "Очень естественное мелирование - солнечные блики. Тренировка техники - набор моделей. Салон Солнечный Зайчик",
+        "imagePath": "kras4.jpg"
+    },
+    {
+        "title": "Окрашивание волос мужчины",
+        "category": "Окрашивание классическое",
+        "content": "Набор мужчин на классическое окрашивание! Закрашивание седины, смена цвета волос, подкрашивание корней. Салон красоты Гитлерюгенд",
+        "imagePath": "kras5.jpg"
+    },
+    {
+        "title": "Спа для рук",
+        "category": "Спа-процедуры",
+        "content": "Спа для рук с применением различных техник, включая парафинотерапию. Укрепление ногтей. Салон Спасибо",
+        "imagePath": "spa1.jpg"
+    },
+    {
+        "title": "Спа для ног",
+        "category": "Спа-процедуры",
+        "content": "Хотите попробовать спа для ног? Расслабление гарантируем! Бесплатная процедура. Салон Спас",
+        "imagePath": "spa2.jpg"
+    },
+    {
+        "title": "Спа для волос",
+        "category": "Спа-процедуры",
+        "content": "Срочно ищем моделей для мастер-класса спа для волос. Результат - здоровые шелковистые волосы без секущихся кончиков! Салон красоты Спарта",
+        "imagePath": "spa3.jpg"
+    },
+    {
+        "title": "Спа для тела",
+        "category": "Спа-процедуры",
+        "content": "Спа в бочке - требуются модели для отработки навыков мастеров. Эффект жиросжигания. Спа-салон Спаржа",
+        "imagePath": "spa4.jpg"
+    },
+    {
+        "title": "Спа-массаж",
+        "category": "Спа-процедуры",
+        "content": "Требуются модели на бесплатный мастер-класс по спа-массажу с применением камней. Оздоровительный эффект! Салон Спатки",
+        "imagePath": "spa5.png"
+    },
+    {
+        "title": "Инъекционные методики",
+        "category": "Чудеса косметологии",
+        "content": "Набор моделей на мастер-класс по инъекционной косметологии - гиалуроновая кислота, ботокс. Салон красоты Уточка",
+        "imagePath": "cosm1.jpg"
+    },
+    {
+        "title": "Биоревитализация",
+        "category": "Чудеса косметологии",
+        "content": "Биоревитализация - улучши цвет лица, разгладь морщины! Микроиглы с витаминами, практически безболезненно. Салон красоты Уколд",
+        "imagePath": "cosm2.jpg"
+    },
+    {
+        "title": "Нити",
+        "category": "Чудеса косметологии",
+        "content": "Нитевая техника для подтяжки лица - нужны модели, цена за расходники. Салон Ариадна",
+        "imagePath": "cosm3.jpg"
+    },
+    {
+        "title": "Перманентный макияж",
+        "category": "Чудеса косметологии",
+        "content": "На мастер-класс по перманентному макияжу требуются молодые девушки, мастер с многолетним стажем, гарантия результата. Салон Натуральная Красота",
+        "imagePath": "cosm4.png"
+    },
+    {
+        "title": "Чистка лица",
+        "category": "Чудеса косметологии",
+        "content": "Атравматичная чистка лица с использованием израильской лечебной косметики - набор моделей от 16 лет. Салон красоты Чистилище",
+        "imagePath": "cosm5.jpg"
+    },
+    {
+        "title": "Акварельная техника",
+        "category": "Татуировки",
+        "content": "Приглашаем всех желающих к начинающему мастеру Веронике на акварельную технику - изумительные эскизы. Тату-салон Хоп Мусорок",
+        "imagePath": "tatu1.jpg"
+    },
+    {
+        "title": "Тату в стиле скетч",
+        "category": "Татуировки",
+        "content": "Скетч-татуировки стали очень популярными в этом году. Тату салон Черновик приглашает на мастер-класс, доступные эскизы ищите на странице салона.",
+        "imagePath": "tatu2.jpg"
+    },
+    {
+        "title": "Татуировки с дымом",
+        "category": "Татуировки",
+        "content": "Отработка дымовой техники - мастер-класс на предплечье. Цена за расходники! Салон Подыми",
+        "imagePath": "tatu3.jpg"
+    },
+    {
+        "title": "Флюоресцентная краска в тату",
+        "category": "Татуировки",
+        "content": "Хочешь быть в центре внимания на любой вечеринке? Тогда светящиеся в УФ лучах татуировки для тебя! Приходи к нашему мастеру, плати за расходники и щеголяй с обновкой на коже. Салон Ультрафиолет",
+        "imagePath": "tatu4.jpg"
+    },
+    {
+        "title": "Эскизы одной линией - супертренд",
+        "category": "Татуировки",
+        "content": "Бешено популярные эскризы татуировок, нарисованных не отрывая руки от бумаги - мастер-класс начинающего мастера. Осталось 3 места! Тату-салон Забой",
+        "imagePath": "tatu5.jpg"
+    },
+    {
+        "title": "Брови - шотирование",
+        "category": "Архитектура бровей",
+        "content": "Распространенная техника архитектуры бровей - набор моделей на апрель. Салон Серебровь",
+        "imagePath": "bro1.jpg"
+    },
+    {
+        "title": "Волосковый метод татуажа бровей",
+        "category": "Архитектура бровей",
+        "content": "Мастер-класс по волосковому татуажу бровей - естественный результат. Набор 10 моделей. Салон Бровь/Любовь",
+        "imagePath": "bro2.jpg"
+    },
+    {
+        "title": "Пиксельный татуаж бровей - бесплатно",
+        "category": "Архитектура бровей",
+        "content": "Начинающие мастера набирают моделей на пиксельный татуаж бровей - платим только за краску. Салон Брежнев",
+        "imagePath": "bro3.jpg"
+    },
+    {
+        "title": "Пудровая техника - тренд сезона!",
+        "category": "Архитектура бровей",
+        "content": "Модели на май. Брови в пудровой технике выглядят максимально естественно. Салон красоты Не В Глаз А В Бровь",
+        "imagePath": "bro4.jpg"
+    },
+    {
+        "title": "3D моделирование бровей",
+        "category": "Архитектура бровей",
+        "content": "Набор моделей для мастер-класса по 3D татуажу бровей. Салон Бро",
+        "imagePath": "bro5.png"
+    },
+    {
+        "title": "Натуральный эффект наращивания ресниц",
+        "category": "Наращивание ресниц",
+        "content": "Требуются модели на мастер-класс по наращиванию с естественным финишем. Небольшой изгиб, увеличение объема. Салон красоты Хлопай Ресницами",
+        "imagePath": "lash1.jpg"
+    },
+    {
+        "title": "Наращивание - гламур 5Д",
+        "category": "Наращивание ресниц",
+        "content": "Вызывающий роковой взгляд - практически задаром в салоне ГлаМур. Оплата за расходный материал. Профессиональные мастера.",
+        "imagePath": "lash2.jpg"
+    },
+    {
+        "title": "Беличий эффект",
+        "category": "Наращивание ресниц",
+        "content": "Мастер-класс по одной из самых популярных техник наращивания ресниц - спеши поучаствовать в качестве модели! Места ограничены. Звонить по телефону 8-800-555-35-35",
+        "imagePath": "lash3.jpg"
+    },
+    {
+        "title": "Лисий эффект",
+        "category": "Наращивание ресниц",
+        "content": "Изысканная техника наращивания ресниц - мастеру требуются модели для оттачивания навыков под контролем профессионала. Салон красоты Крысопетка",
+        "imagePath": "lash4.jpg"
+    },
+    {
+        "title": "Наращивание ресниц в технике лучики",
+        "category": "Наращивание ресниц",
+        "content": "Необычный эффект - ресницы разной длины, открытый притягательный взгляд. Ищем моделей, фото результатов выложим в инстаграм! Салон Ресницы Как В Ницце",
+        "imagePath": "lash5.jpg"
+    },
+    {
+        "title": "Септум и другой пирсинг носа",
+        "category": "Пирсинг",
+        "content": "Необходимы модели на пирсинг носа - септум, бридж, прокол крыльев. Украшения из медицинской стали. Салон Дыра",
+        "imagePath": "pirs1.jpg"
+    },
+    {
+        "title": "Индастриал и другой пирсинг ушей",
+        "category": "Пирсинг",
+        "content": "Какой угодно пирсинг ушей - помогаем мастерам набить руку, получаем скидки! Тоннели, индастриал, пирсинг хряща, хеликс, трагус. Тату-салон С Иголочки",
+        "imagePath": "pirs2.jpg"
+    },
+    {
+        "title": "Сплит языка",
+        "category": "Пирсинг",
+        "content": "Ужасающий сплит языка - мастер-класс у профессионала своего дела. Также набор на пирсинг языка. Салон Боль",
+        "imagePath": "pirs3.jpg"
+    },
+    {
+        "title": "Пирсинг глаз",
+        "category": "Пирсинг",
+        "content": "Крутой пирсинг глаз (внедрение платиновых пластинок в глазное яблоко) в тату-салоне Песчинка. Всего 15 минут, стоимость снижена.",
+        "imagePath": "pirs4.jpg"
+    },
+    {
+        "title": "Пирсинг на разных частях тела",
+        "category": "Пирсинг",
+        "content": "Проводим мастер-класс по пирсинку различных частей тела (шея, спина, руки, пупок и так далее). Набираем моделей на май. Тату-салон Неформат",
+        "imagePath": "pirs5.jpg"
+    },
+    {
+        "title": "Эпиляция бровей нитью",
+        "category": "Эпиляция",
+        "content": "Набор моделей для нитевой эпиляции бровей бесплатно. Салон Не Тяните Нити-Нити",
+        "imagePath": "epil1.jpg"
+    },
+    {
+        "title": "Шугаринг",
+        "category": "Эпиляция",
+        "content": "Шугаринг не сдает позиций - записывайся в модели на мастер-класс. Руки, ноги, бикини. Салон красоты Не Шоколад А Сахер",
+        "imagePath": "epil2.jpg"
+    },
+    {
+        "title": "Восковая эпиляция",
+        "category": "Эпиляция",
+        "content": "Мастер-класс по традиционной восковой эпиляции, требуются модели на апрель. Салон красоты Ауч",
+        "imagePath": "epil3.jpg"
+    },
+    {
+        "title": "Лазерная эпиляция",
+        "category": "Эпиляция",
+        "content": "Лазерная эпиляция считается наиболее эффективной. За несколько процедур - избавление от волос навсегда. Гарантии. Модели на обучение - дена со скидкой 50%. Студия эстетики Эпицентр",
+        "imagePath": "epil4.png"
+    },
+    {
+        "title": "Электроэпиляция",
+        "category": "Эпиляция",
+        "content": "Электроэпиляция - эффективная методика избавления от нежелательных волос. Любой участок по выбору модели. Салон красоты Эпидемия",
+        "imagePath": "epil5.jpg"
+    },
+    {
+        "title": "Леопардовые пряди",
+        "category": "Окрашивание креативное",
+        "content": "Верни мне мой 2007 - леопардовые пряди снова в моде, кто бы мог подумать. Вспоминаем технику, приглашаем моделей по цене расходников. Салон красоты Педоффка",
+        "imagePath": "okr1.jpg"
+    },
+    {
+        "title": "Рисунок на волосах",
+        "category": "Окрашивание креативное",
+        "content": "Начинающим парикмахерам требуются модели на отработку техники рисования на волосах. Вкусная стоимость, возврат денег при неудовлетворительном результате. Салон красоты Неформалка",
+        "imagePath": "okr2.jpg"
+    },
+    {
+        "title": "Блочное окрашивание",
+        "category": "Окрашивание креативное",
+        "content": "Окрашивание блоками яркими красителями - мастер-класс для учеников школы парикмахерского искусства. Приглашаем моделей для участия! Салон Блокировка",
+        "imagePath": "okr3.jpg"
+    },
+    {
+        "title": "Креативное окрашивание",
+        "category": "Окрашивание креативное",
+        "content": "Модное необычное окрашивание волос с переливами разных цветов, богатый выбор оттенков, прекрасно смотрится на девушках и женщинах любого возраста. Салон Прекрасный Перекрас",
+        "imagePath": "okr4.jpg"
+    },
+    {
+        "title": "Голографическое окрашивание - тренд инстаграма",
+        "category": "Окрашивание креативное",
+        "content": "Набор моделей на невероятную радужно-голографическую окраску волос! Цена за исходники, красивые фото в подарок. Салон красоты Мдмазель",
+        "imagePath": "okr5.jpg"
+    },
+    {
+        "title": "Нюдовый макияж",
+        "category": "Макияж",
+        "content": "Универсальный нюдовый макияж, качественная косметика (люксовый сегмент). Модели набираются на май 2020. Салон красоты Штукатурка",
+        "imagePath": "mak1.jpg"
+    },
+    {
+        "title": "Праздничный макияж",
+        "category": "Макияж",
+        "content": "Требуются модели на яркий праздничный макияж (акцент на глаза; темная палитра). Салон красоты Лепота",
+        "imagePath": "mak2.jpg"
+    },
+    {
+        "title": "Смоки айз",
+        "category": "Макияж",
+        "content": "Новая классика - насыщенные смоки айз. Требуются модели на выставку! Обращаться в салон красоты Эмогот",
+        "imagePath": "mak3.jpg"
+    },
+    {
+        "title": "Креативный макияж",
+        "category": "Макияж",
+        "content": "Активно набираем моделей на креативный макияж с использованием ярких теней и необычных накладных ресниц. Классные фотки в соцсети обеспечены! Салон красоты Скука",
+        "imagePath": "mak4.jpg"
+    },
+    {
+        "title": "Мастер-класс по восточному макияжу",
+        "category": "Макияж",
+        "content": "Восточный макияж - броский элегантный вариант для роковых красавиц. Пошаговый мастер-класс для наших моделей, фотосессия в подарок. Салон красоты АльДжазира",
+        "imagePath": "mak5.jpg"
     }
 ]

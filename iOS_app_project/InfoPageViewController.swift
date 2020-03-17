@@ -10,7 +10,7 @@ import UIKit
 
 class InfoPageViewController: ViewController {
     
-    var post: appPost = appPost(title: "", content: "", imagePath: "")
+    var post: appPost = appPost(title: "", category: "",content: "", imagePath: "")
     
     @IBOutlet weak var titleLabel: UILabel!
     

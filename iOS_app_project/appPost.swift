@@ -11,6 +11,7 @@ import Foundation
 
 struct appPost: Decodable {
     let title: String
+    let category : String
     let content: String
     let imagePath: String
     
