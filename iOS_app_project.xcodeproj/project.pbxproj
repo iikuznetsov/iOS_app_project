@@ -45,6 +45,22 @@
 		52375E98239C6A060083EAB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52375E96239C6A060083EAB9 /* LaunchScreen.storyboard */; };
 		9428FC4A241C512000C8DBB1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9428FC49241C512000C8DBB1 /* ProfileViewController.swift */; };
 		946BC4AB241684FD00FBCFA1 /* NewRegPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946BC4AA241684FD00FBCFA1 /* NewRegPageViewController.swift */; };
+		94964B32242133D700C40716 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94964B31242133D700C40716 /* FilterViewController.swift */; };
+		94964B342421344200C40716 /* filters.json in Resources */ = {isa = PBXBuildFile; fileRef = 94964B332421344200C40716 /* filters.json */; };
+		94964B362421416F00C40716 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94964B352421416F00C40716 /* Filter.swift */; };
+		94964B462421455F00C40716 /* Пирсинг.png in Resources */ = {isa = PBXBuildFile; fileRef = 94964B392421455D00C40716 /* Пирсинг.png */; };
+		94964B472421455F00C40716 /* Эпиляция.png in Resources */ = {isa = PBXBuildFile; fileRef = 94964B3A2421455D00C40716 /* Эпиляция.png */; };
+		94964B482421455F00C40716 /* Классическое окрашивание.png in Resources */ = {isa = PBXBuildFile; fileRef = 94964B3B2421455D00C40716 /* Классическое окрашивание.png */; };
+		94964B492421455F00C40716 /* Солярий.png in Resources */ = {isa = PBXBuildFile; fileRef = 94964B3C2421455D00C40716 /* Солярий.png */; };
+		94964B4A2421455F00C40716 /* Ресницы.png in Resources */ = {isa = PBXBuildFile; fileRef = 94964B3D2421455E00C40716 /* Ресницы.png */; };
+		94964B4B2421455F00C40716 /* Креативное окрашивание.png in Resources */ = {isa = PBXBuildFile; fileRef = 94964B3E2421455E00C40716 /* Креативное окрашивание.png */; };
+		94964B4C2421455F00C40716 /* Тату.png in Resources */ = {isa = PBXBuildFile; fileRef = 94964B3F2421455E00C40716 /* Тату.png */; };
+		94964B4D2421455F00C40716 /* Макияж.png in Resources */ = {isa = PBXBuildFile; fileRef = 94964B402421455E00C40716 /* Макияж.png */; };
+		94964B4E2421455F00C40716 /* Косметология.png in Resources */ = {isa = PBXBuildFile; fileRef = 94964B412421455E00C40716 /* Косметология.png */; };
+		94964B4F2421455F00C40716 /* Маникюр.png in Resources */ = {isa = PBXBuildFile; fileRef = 94964B422421455E00C40716 /* Маникюр.png */; };
+		94964B502421455F00C40716 /* Педикюр.png in Resources */ = {isa = PBXBuildFile; fileRef = 94964B432421455F00C40716 /* Педикюр.png */; };
+		94964B512421455F00C40716 /* Брови.png in Resources */ = {isa = PBXBuildFile; fileRef = 94964B442421455F00C40716 /* Брови.png */; };
+		94964B522421455F00C40716 /* Спа.png in Resources */ = {isa = PBXBuildFile; fileRef = 94964B452421455F00C40716 /* Спа.png */; };
 		94E1CF1B241D8481002DD769 /* EditingProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E1CF1A241D8481002DD769 /* EditingProfileViewController.swift */; };
 		94E1CF1D241D87F5002DD769 /* signedInUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E1CF1C241D87F5002DD769 /* signedInUser.swift */; };
 		94E44301241F9BD800086B09 /* appPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E44300241F9BD800086B09 /* appPost.swift */; };
@@ -94,6 +110,22 @@
 		52375E99239C6A060083EAB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9428FC49241C512000C8DBB1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		946BC4AA241684FD00FBCFA1 /* NewRegPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRegPageViewController.swift; sourceTree = "<group>"; };
+		94964B31242133D700C40716 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		94964B332421344200C40716 /* filters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = filters.json; sourceTree = "<group>"; };
+		94964B352421416F00C40716 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		94964B392421455D00C40716 /* Пирсинг.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Пирсинг.png"; sourceTree = "<group>"; };
+		94964B3A2421455D00C40716 /* Эпиляция.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Эпиляция.png"; sourceTree = "<group>"; };
+		94964B3B2421455D00C40716 /* Классическое окрашивание.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Классическое окрашивание.png"; sourceTree = "<group>"; };
+		94964B3C2421455D00C40716 /* Солярий.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Солярий.png"; sourceTree = "<group>"; };
+		94964B3D2421455E00C40716 /* Ресницы.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ресницы.png"; sourceTree = "<group>"; };
+		94964B3E2421455E00C40716 /* Креативное окрашивание.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Креативное окрашивание.png"; sourceTree = "<group>"; };
+		94964B3F2421455E00C40716 /* Тату.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Тату.png"; sourceTree = "<group>"; };
+		94964B402421455E00C40716 /* Макияж.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Макияж.png"; sourceTree = "<group>"; };
+		94964B412421455E00C40716 /* Косметология.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Косметология.png"; sourceTree = "<group>"; };
+		94964B422421455E00C40716 /* Маникюр.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Маникюр.png"; sourceTree = "<group>"; };
+		94964B432421455F00C40716 /* Педикюр.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Педикюр.png"; sourceTree = "<group>"; };
+		94964B442421455F00C40716 /* Брови.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Брови.png"; sourceTree = "<group>"; };
+		94964B452421455F00C40716 /* Спа.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Спа.png"; sourceTree = "<group>"; };
 		94E1CF1A241D8481002DD769 /* EditingProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingProfileViewController.swift; sourceTree = "<group>"; };
 		94E1CF1C241D87F5002DD769 /* signedInUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signedInUser.swift; sourceTree = "<group>"; };
 		94E44300241F9BD800086B09 /* appPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appPost.swift; sourceTree = "<group>"; };
@@ -116,6 +148,19 @@
 		210EC15D23A225190031045D /* Pics */ = {
 			isa = PBXGroup;
 			children = (
+				94964B442421455F00C40716 /* Брови.png */,
+				94964B3B2421455D00C40716 /* Классическое окрашивание.png */,
+				94964B412421455E00C40716 /* Косметология.png */,
+				94964B3E2421455E00C40716 /* Креативное окрашивание.png */,
+				94964B402421455E00C40716 /* Макияж.png */,
+				94964B422421455E00C40716 /* Маникюр.png */,
+				94964B432421455F00C40716 /* Педикюр.png */,
+				94964B392421455D00C40716 /* Пирсинг.png */,
+				94964B3D2421455E00C40716 /* Ресницы.png */,
+				94964B3C2421455D00C40716 /* Солярий.png */,
+				94964B452421455F00C40716 /* Спа.png */,
+				94964B3F2421455E00C40716 /* Тату.png */,
+				94964B3A2421455D00C40716 /* Эпиляция.png */,
 				2127CF36241FEAF400A5A1E0 /* logotext.png */,
 				2127CF38241FEAF900A5A1E0 /* logotext2.png */,
 				2127CF32241FDD8F00A5A1E0 /* accountphoto.png */,
@@ -181,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				94E44302241FAD0600086B09 /* posts.json */,
+				94964B332421344200C40716 /* filters.json */,
 				210EC16623A2335C0031045D /* Icons */,
 				210EC15D23A225190031045D /* Pics */,
 				52375E88239C69F40083EAB9 /* AppDelegate.swift */,
@@ -195,12 +241,14 @@
 				52375E91239C69F40083EAB9 /* iOS_app_project.xcdatamodeld */,
 				946BC4AA241684FD00FBCFA1 /* NewRegPageViewController.swift */,
 				ACBA0963241A615E0058DE2B /* SearchTabViewController.swift */,
+				94964B31242133D700C40716 /* FilterViewController.swift */,
 				21323BE0241DD2DA0081D8A6 /* PostCell.swift */,
 				9428FC49241C512000C8DBB1 /* ProfileViewController.swift */,
 				94E1CF1A241D8481002DD769 /* EditingProfileViewController.swift */,
 				94E1CF1C241D87F5002DD769 /* signedInUser.swift */,
 				94E44300241F9BD800086B09 /* appPost.swift */,
 				94E44304241FAF9700086B09 /* InfoPageViewController.swift */,
+				94964B352421416F00C40716 /* Filter.swift */,
 			);
 			path = iOS_app_project;
 			sourceTree = "<group>";
@@ -263,28 +311,42 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94964B4D2421455F00C40716 /* Макияж.png in Resources */,
 				52375E98239C6A060083EAB9 /* LaunchScreen.storyboard in Resources */,
 				21D880CE241586F700FBE60E /* MainPageCollectionViewCell.xib in Resources */,
 				2127CF33241FDD9000A5A1E0 /* accountphoto.png in Resources */,
 				2127CF37241FEAF400A5A1E0 /* logotext.png in Resources */,
+				94964B4A2421455F00C40716 /* Ресницы.png in Resources */,
 				210EC1A423A2335C0031045D /* icon1024.jpg in Resources */,
+				94964B502421455F00C40716 /* Педикюр.png in Resources */,
+				94964B482421455F00C40716 /* Классическое окрашивание.png in Resources */,
 				210EC1B423A2335C0031045D /* icon58.jpg in Resources */,
+				94964B4B2421455F00C40716 /* Креативное окрашивание.png in Resources */,
 				210EC1CE23A2335C0031045D /* icon180.jpg in Resources */,
 				2127CF39241FEAF900A5A1E0 /* logotext2.png in Resources */,
 				52375E95239C6A060083EAB9 /* Assets.xcassets in Resources */,
+				94964B4C2421455F00C40716 /* Тату.png in Resources */,
+				94964B462421455F00C40716 /* Пирсинг.png in Resources */,
 				210EC1A223A2335C0031045D /* icon29.jpg in Resources */,
 				52375E90239C69F40083EAB9 /* Main.storyboard in Resources */,
 				210EC1BB23A2335C0031045D /* icon80.jpg in Resources */,
 				94E44303241FAD0600086B09 /* posts.json in Resources */,
+				94964B4F2421455F00C40716 /* Маникюр.png in Resources */,
+				94964B512421455F00C40716 /* Брови.png in Resources */,
 				210EC1AB23A2335C0031045D /* icon60.jpg in Resources */,
 				210EC1D023A234F40031045D /* Лого.png in Resources */,
+				94964B472421455F00C40716 /* Эпиляция.png in Resources */,
 				210EC1B623A2335C0031045D /* icon40.jpg in Resources */,
 				210EC1C723A2335C0031045D /* icon20.jpg in Resources */,
 				21323BDF241DBAF60081D8A6 /* Лого2.png in Resources */,
+				94964B4E2421455F00C40716 /* Косметология.png in Resources */,
 				210EC1C223A2335C0031045D /* icon87.jpg in Resources */,
 				210EC1C323A2335C0031045D /* icon120.jpg in Resources */,
 				210EC1C623A2335C0031045D /* icon152.jpg in Resources */,
+				94964B342421344200C40716 /* filters.json in Resources */,
+				94964B522421455F00C40716 /* Спа.png in Resources */,
 				210EC1A123A2335C0031045D /* icon167.jpg in Resources */,
+				94964B492421455F00C40716 /* Солярий.png in Resources */,
 				210EC1AD23A2335C0031045D /* icon76.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +360,7 @@
 			files = (
 				52375E8D239C69F40083EAB9 /* ViewController.swift in Sources */,
 				94E1CF1D241D87F5002DD769 /* signedInUser.swift in Sources */,
+				94964B362421416F00C40716 /* Filter.swift in Sources */,
 				21D880C5241583F700FBE60E /* MainPageViewController.swift in Sources */,
 				94E44305241FAF9700086B09 /* InfoPageViewController.swift in Sources */,
 				21D880CB241585D600FBE60E /* MainPageCollectionViewCell.swift in Sources */,
@@ -312,6 +375,7 @@
 				21323BE1241DD2DA0081D8A6 /* PostCell.swift in Sources */,
 				210EC16523A22F850031045D /* Login Page View Controller.swift in Sources */,
 				21D880D52415894C00FBE60E /* DefaultGriddedContentCollectionViewDelegate.swift in Sources */,
+				94964B32242133D700C40716 /* FilterViewController.swift in Sources */,
 				21D880D72415894C00FBE60E /* DefaultCollectionViewDelegate.swift in Sources */,
 				21D880D02415885F00FBE60E /* MainPageProvider.swift in Sources */,
 				52375E8B239C69F40083EAB9 /* SceneDelegate.swift in Sources */,

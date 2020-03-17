@@ -55,6 +55,8 @@ class SearchTabViewController: UIViewController, UITableViewDataSource, UITableV
         
     }
     
+    @IBOutlet weak var filterButtonOutlet: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,8 +67,12 @@ class SearchTabViewController: UIViewController, UITableViewDataSource, UITableV
         searchResultsTableView.delegate = self
         searchResultsTableView.dataSource = self
         print(posts.count)
+        self.tabBarController?.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: filterButtonOutlet)
     }
-
+    
+    //override func viewDidAppear(_ animated: Bool) {
+       
+    //}
 
     /*
     // MARK: - Navigation

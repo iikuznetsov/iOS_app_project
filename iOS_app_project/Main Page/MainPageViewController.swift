@@ -60,6 +60,10 @@ class MainPageViewController: UICollectionViewController {
         self.tabBarController?.navigationItem.rightBarButtonItem = UIBarButtonItem(image: selectedStyle.buttonImage, style: .plain, target: self, action: #selector(changeContentLayout))
     }
     
+   /* override func viewDidAppear(_ animated: Bool) {
+        self.tabBarController?.navigationItem.rightBarButtonItem = UIBarButtonItem(image: selectedStyle.buttonImage, style: .plain, target: self, action: #selector(changeContentLayout))
+    }*/
+    
     private func updatePresentationStyle() {
         collectionView.delegate = styleDelegates[selectedStyle]
         collectionView.performBatchUpdates({
