@@ -44,6 +44,8 @@ class NewRegPageViewController: UIViewController, UINavigationControllerDelegate
         case 0:
             logoImageView.image = UIImage(named: "logotext.png")
             MasterView.isHidden = true
+            masterCodeTextField.text = ""
+            masterOccupationTextField.text = ""
         case 1:
             logoImageView.image = UIImage(named: "logotext2.png")
             MasterView.isHidden = false
@@ -219,37 +221,73 @@ class NewRegPageViewController: UIViewController, UINavigationControllerDelegate
     func textFieldDidEndEditing(_ textField: UITextField) {
         switch textField{
         case userLoginTextField:
-            loginCheckBoxImageView.image = UIImage(systemName: "checkmark")
-            loginCheckBoxImageView.tintColor = #colorLiteral(red: 0.4412127807, green: 0.7037000317, blue: 0.4492821145, alpha: 1)
+            let request = User.fetchRequest() as NSFetchRequest<User>
+            var isLoginOk: Bool = true
+            if let result = try? context?.fetch(request) {
+                for user in result {
+                    if user.login == userLoginTextField.text {
+                        isLoginOk = false
+                        loginCheckBoxImageView.image = UIImage(systemName: "xmark")
+                        loginCheckBoxImageView.tintColor = #colorLiteral(red: 0.7546754728, green: 0.2473161223, blue: 0.2139258107, alpha: 1)
+                        break;
+                    }
+                }
+            }
+            if isLoginOk{
+                loginCheckBoxImageView.image = UIImage(systemName: "checkmark")
+                loginCheckBoxImageView.tintColor = #colorLiteral(red: 0.4412127807, green: 0.7037000317, blue: 0.4492821145, alpha: 1)
+            }
+            if userLoginTextField.text == "" {
+                loginCheckBoxImageView.image = nil
+            }
             //loginCheckBoxImageView.tintColor = #colorLiteral(red: 0.7546754728, green: 0.2473161223, blue: 0.2139258107, alpha: 1)
         case userPasswordTextField:
-            passwordCheckBoxImageView.image = UIImage(systemName: "checkmark")
-            passwordCheckBoxImageView.tintColor = #colorLiteral(red: 0.4412127807, green: 0.7037000317, blue: 0.4492821145, alpha: 1)
+            if userPasswordTextField.text!.count > 5 {
+                passwordCheckBoxImageView.image = UIImage(systemName: "checkmark")
+                passwordCheckBoxImageView.tintColor = #colorLiteral(red: 0.4412127807, green: 0.7037000317, blue: 0.4492821145, alpha: 1)
+            } else {
+                passwordCheckBoxImageView.image = UIImage(systemName: "xmark")
+                passwordCheckBoxImageView.tintColor = #colorLiteral(red: 0.7546754728, green: 0.2473161223, blue: 0.2139258107, alpha: 1)
+            }
+            if userPasswordTextField.text == "" {
+                passwordCheckBoxImageView.image = nil
+            }
         case userEmailTextField:
-            emailCheckBoxImageView.image = UIImage(systemName: "checkmark")
-            emailCheckBoxImageView.tintColor = #colorLiteral(red: 0.4412127807, green: 0.7037000317, blue: 0.4492821145, alpha: 1)
+            if (userEmailTextField.text?.contains("@"))!{
+                emailCheckBoxImageView.image = UIImage(systemName: "checkmark")
+                emailCheckBoxImageView.tintColor = #colorLiteral(red: 0.4412127807, green: 0.7037000317, blue: 0.4492821145, alpha: 1)
+            } else {
+                emailCheckBoxImageView.image = UIImage(systemName: "xmark")
+                emailCheckBoxImageView.tintColor = #colorLiteral(red: 0.7546754728, green: 0.2473161223, blue: 0.2139258107, alpha: 1)
+            }
+            if userEmailTextField.text == "" {
+                emailCheckBoxImageView.image = nil
+            }
         case userPhoneTextField:
-            phoneCheckBoxImageView.image = UIImage(systemName: "checkmark")
-            phoneCheckBoxImageView.tintColor = #colorLiteral(red: 0.4412127807, green: 0.7037000317, blue: 0.4492821145, alpha: 1)
+            if userPhoneTextField.text == "" {
+                phoneCheckBoxImageView.image = nil
+            } else {
+                phoneCheckBoxImageView.image = UIImage(systemName: "checkmark")
+                phoneCheckBoxImageView.tintColor = #colorLiteral(red: 0.4412127807, green: 0.7037000317, blue: 0.4492821145, alpha: 1)
+            }
         case masterOccupationTextField:
-            occupationCheckBoxImageView.image = UIImage(systemName: "checkmark")
-            occupationCheckBoxImageView.tintColor = #colorLiteral(red: 0.4412127807, green: 0.7037000317, blue: 0.4492821145, alpha: 1)
+            if masterOccupationTextField.text == "" {
+                occupationCheckBoxImageView.image = nil
+            } else {
+                occupationCheckBoxImageView.image = UIImage(systemName: "checkmark")
+                occupationCheckBoxImageView.tintColor = #colorLiteral(red: 0.4412127807, green: 0.7037000317, blue: 0.4492821145, alpha: 1)
+            }
         case masterCodeTextField:
-            masterCodeCheckBoxImageView.image = UIImage(systemName: "checkmark")
-            masterCodeCheckBoxImageView.tintColor = #colorLiteral(red: 0.4412127807, green: 0.7037000317, blue: 0.4492821145, alpha: 1)
+            if masterCodeTextField.text == "" {
+                masterCodeCheckBoxImageView.image = nil
+            } else {
+                masterCodeCheckBoxImageView.image = UIImage(systemName: "checkmark")
+                masterCodeCheckBoxImageView.tintColor = #colorLiteral(red: 0.4412127807, green: 0.7037000317, blue: 0.4492821145, alpha: 1)
+            }
             //последние два не работают, хз почему, надо поправить
         default: break
-        } //добавить проверку на соответствие формату строки для ячейки
+        }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
