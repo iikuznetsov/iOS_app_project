@@ -101,6 +101,7 @@
 		944DA7372423766700D1F76F /* tatu2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 944DA7002423766700D1F76F /* tatu2.jpg */; };
 		9460C309242388FA00F7D175 /* filter.png in Resources */ = {isa = PBXBuildFile; fileRef = 9460C308242388FA00F7D175 /* filter.png */; };
 		9460C30B24239EC300F7D175 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9460C30A24239EC300F7D175 /* FormViewController.swift */; };
+		9460C30D2423B06A00F7D175 /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9460C30C2423B06A00F7D175 /* ChangePasswordViewController.swift */; };
 		946BC4AB241684FD00FBCFA1 /* NewRegPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946BC4AA241684FD00FBCFA1 /* NewRegPageViewController.swift */; };
 		94964B32242133D700C40716 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94964B31242133D700C40716 /* FilterViewController.swift */; };
 		94964B342421344200C40716 /* filters.json in Resources */ = {isa = PBXBuildFile; fileRef = 94964B332421344200C40716 /* filters.json */; };
@@ -223,6 +224,7 @@
 		944DA7002423766700D1F76F /* tatu2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tatu2.jpg; sourceTree = "<group>"; };
 		9460C308242388FA00F7D175 /* filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = filter.png; sourceTree = "<group>"; };
 		9460C30A24239EC300F7D175 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		9460C30C2423B06A00F7D175 /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
 		946BC4AA241684FD00FBCFA1 /* NewRegPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewRegPageViewController.swift; sourceTree = "<group>"; };
 		94964B31242133D700C40716 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
 		94964B332421344200C40716 /* filters.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = filters.json; sourceTree = "<group>"; };
@@ -429,6 +431,7 @@
 				94E44304241FAF9700086B09 /* InfoPageViewController.swift */,
 				94964B352421416F00C40716 /* Filter.swift */,
 				9460C30A24239EC300F7D175 /* FormViewController.swift */,
+				9460C30C2423B06A00F7D175 /* ChangePasswordViewController.swift */,
 			);
 			path = iOS_app_project;
 			sourceTree = "<group>";
@@ -612,6 +615,7 @@
 				21323BE1241DD2DA0081D8A6 /* PostCell.swift in Sources */,
 				210EC16523A22F850031045D /* Login Page View Controller.swift in Sources */,
 				21D880D52415894C00FBE60E /* DefaultGriddedContentCollectionViewDelegate.swift in Sources */,
+				9460C30D2423B06A00F7D175 /* ChangePasswordViewController.swift in Sources */,
 				94964B32242133D700C40716 /* FilterViewController.swift in Sources */,
 				21D880D72415894C00FBE60E /* DefaultCollectionViewDelegate.swift in Sources */,
 				21D880D02415885F00FBE60E /* MainPageProvider.swift in Sources */,

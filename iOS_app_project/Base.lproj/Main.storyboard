@@ -131,12 +131,12 @@
             </objects>
             <point key="canvasLocation" x="298.55072463768118" y="257.8125"/>
         </scene>
-        <!--View Controller-->
+        <!--Change Password View Controller-->
         <scene sceneID="vFX-MJ-EmR">
             <objects>
-                <viewController id="vJ3-3N-rSg" sceneMemberID="viewController">
+                <viewController id="vJ3-3N-rSg" customClass="ChangePasswordViewController" customModule="FreeModel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E9Y-Cm-BIs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Лого.png" translatesAutoresizingMaskIntoConstraints="NO" id="y98-eD-uvt">
@@ -257,12 +257,21 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="changeAction:" destination="vJ3-3N-rSg" eventType="touchUpInside" id="KPh-vY-uG9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="e7u-kj-iuL"/>
                     </view>
                     <navigationItem key="navigationItem" id="fDC-Ib-dyE"/>
+                    <connections>
+                        <outlet property="confirmPassword" destination="ztR-18-3kT" id="lAa-Hf-6t0"/>
+                        <outlet property="loginExistLabel" destination="SZv-KC-PZ7" id="tiM-Do-j9D"/>
+                        <outlet property="loginTextField" destination="hnw-u1-j6m" id="slL-hj-ojp"/>
+                        <outlet property="passwordTextField" destination="5pa-sG-Jkd" id="rPQ-Ja-Bz0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DNV-fL-Sz6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -321,6 +330,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <segue destination="vJ3-3N-rSg" kind="presentation" id="q77-f0-yEk"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Лого.png" translatesAutoresizingMaskIntoConstraints="NO" id="3yh-FE-eHu">
                                 <rect key="frame" x="-184" y="201" width="782" height="294"/>
@@ -379,7 +391,6 @@
                         <outlet property="passwordOutlet" destination="teh-EA-WBa" id="7cm-Pq-mpl"/>
                         <segue destination="hBH-9Z-nJv" kind="show" identifier="goToTabPage" id="lLj-6n-8Zg"/>
                         <segue destination="8EM-Y1-wsV" kind="show" identifier="goToReg" id="KJC-xj-n6F"/>
-                        <segue destination="vJ3-3N-rSg" kind="show" identifier="changePassword" id="i5t-Hh-2Aw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HI7-b1-eEh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -3017,6 +3028,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="KJC-xj-n6F"/>
-        <segue reference="sa9-bn-a7z"/>
+        <segue reference="lLj-6n-8Zg"/>
     </inferredMetricsTieBreakers>
 </document>
