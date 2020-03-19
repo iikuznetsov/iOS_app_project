@@ -62,7 +62,11 @@ class ProfileViewController: UIViewController {
                                     passwordLabel.text = model.password
                                     emailLabel.text = model.email
                                     phoneLabel.text = model.phone
-                                    let currUser = signedInUser(login: model.login!, password: model.password!, email: model.email!, phone: model.phone!, user_type: user.user_type!)
+                                    nameLabel.text = model.name
+                                    surnameLabel.text = model.surname
+                                    var currUser = signedInUser(login: model.login!, password: model.password!, email: model.email!, phone: model.phone!, user_type: user.user_type!)
+                                    currUser.name = model.name
+                                    currUser.surname = model.surname
                                     currentUser = currUser
                                 }
                             }

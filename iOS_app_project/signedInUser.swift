@@ -13,8 +13,8 @@ struct signedInUser {
     let password : String
     let email : String
     let phone : String
-    let name : String? = ""
-    let surname : String? = ""
+    var name : String? = ""
+    var surname : String? = ""
     let user_type : String
     let occupation : String? = ""
     let masterCode : String? = ""

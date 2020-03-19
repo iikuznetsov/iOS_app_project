@@ -26,7 +26,7 @@ class EditingProfileViewController: UIViewController {
     
     @IBOutlet weak var profileImageView: UIImageView!
     
-    var currentUser: signedInUser = signedInUser(login: "", password: "", email: "", phone: "", user_type: "Model")
+    var currentUser: signedInUser = signedInUser(login: "", password: "", email: "", phone: "", user_type: "Модель")
     
     var context = (UIApplication.shared.delegate as? AppDelegate)?.persistentContainer.viewContext
     
@@ -34,18 +34,31 @@ class EditingProfileViewController: UIViewController {
         super.viewDidLoad()
         
         self.view.backgroundColor = #colorLiteral(red: 0.8827067018, green: 0.9073504806, blue: 0.9886979461, alpha: 1)
-        
+        nameTextField.text = currentUser.name
+        surnameTextField.text = currentUser.surname
         loginTextField.text = currentUser.login
         passwordTextField.text = currentUser.password
         emailTextField.text = currentUser.email
         phoneTextField.text = currentUser.phone
+        loginTextField.allowsEditingTextAttributes = false
         
+        addTapGestureToHideKeyboard()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func addTapGestureToHideKeyboard() {
+            let tapGesture = UITapGestureRecognizer(target: view, action: #selector(view.endEditing))
+            view.addGestureRecognizer(tapGesture)
     }
     
     
     @IBAction func saveChangesButtonAction(_ sender: Any) {
         switch currentUser.user_type{
-        case "Model":
+        case "Модель":
         if let cont = context {
             let req = NSFetchRequest<Model>(entityName: "Model")
             req.predicate = NSPredicate(format: "login == %@", currentUser.login)
@@ -83,17 +96,7 @@ class EditingProfileViewController: UIViewController {
             
         default: break
         }
+        self.dismiss(animated: true, completion: nil)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
