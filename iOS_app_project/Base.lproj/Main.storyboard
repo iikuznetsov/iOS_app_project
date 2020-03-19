@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IS1-hO-4go">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IS1-hO-4go">
     <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -1222,9 +1222,10 @@
                                     <constraint firstAttribute="width" constant="233" id="Ywl-71-pXw"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="Угодник">
+                                    <fragment content="Иванов">
                                         <attributes>
                                             <font key="NSFont" size="18" name="GillSans-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -1237,9 +1238,10 @@
                                     <constraint firstAttribute="height" constant="21" id="uyJ-eB-sSf"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="Мамкин">
+                                    <fragment content="Иван">
                                         <attributes>
                                             <font key="NSFont" size="18" name="GillSans-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -1252,9 +1254,10 @@
                                     <constraint firstAttribute="width" constant="233" id="sfK-bc-h2E"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="pidoras228">
+                                    <fragment content="ivanov1999">
                                         <attributes>
                                             <font key="NSFont" size="18" name="GillSans-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -1277,9 +1280,10 @@
                                     <constraint firstAttribute="width" constant="233" id="s4R-g4-vgs"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="lolkek@cheburek.com">
+                                    <fragment content="pochta@mail.ru">
                                         <attributes>
                                             <font key="NSFont" size="18" name="GillSans-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -1566,14 +1570,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.44121278069999997" green="0.70370003169999995" blue="0.4492821145" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Категории" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5JO-GM-7fv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Категории" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5JO-GM-7fv">
                                 <rect key="frame" x="41" y="509" width="80" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5R-eP-GrB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5R-eP-GrB">
                                 <rect key="frame" x="161" y="509" width="209" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
@@ -1586,7 +1590,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvK-Qs-cvW">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvK-Qs-cvW">
                                 <rect key="frame" x="382" y="509" width="20" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -1649,13 +1653,6 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="njR-Do-DGX"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="5JO-GM-7fv"/>
-                                <exclude reference="y5R-eP-GrB"/>
-                                <exclude reference="cvK-Qs-cvW"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="gBU-iG-SsY"/>
                     <connections>
@@ -1986,7 +1983,7 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="улица Членов, 69" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6j1-ud-JJ6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="улица Вышки, 69" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6j1-ud-JJ6">
                                 <rect key="frame" x="169" y="551" width="203" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="18"/>
@@ -2717,8 +2714,8 @@
                                             <action selector="showPasswordAction:" destination="8EM-Y1-wsV" eventType="touchUpInside" id="75W-sL-X9s"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUm-aO-hsi" userLabel="Image Button">
-                                        <rect key="frame" x="130" y="192" width="113.33333333333331" height="106.5"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUm-aO-hsi" userLabel="Image Button">
+                                        <rect key="frame" x="130" y="164" width="162" height="153"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="UUm-aO-hsi" secondAttribute="height" multiplier="152:143" id="9Yl-nv-b7C"/>
@@ -2729,6 +2726,13 @@
                                             <action selector="imageButtonAction:" destination="8EM-Y1-wsV" eventType="touchUpInside" id="HYg-sN-ULM"/>
                                         </connections>
                                     </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qVW-Qy-iXS" userLabel="Scan Image View">
+                                        <rect key="frame" x="131" y="164" width="162" height="153"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="152" id="2dx-aX-8Jz"/>
+                                            <constraint firstAttribute="height" constant="143" id="dan-nJ-WAk"/>
+                                        </constraints>
+                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
@@ -2849,8 +2853,8 @@
                                     <constraint firstAttribute="trailing" secondItem="Rnd-E2-fVc" secondAttribute="trailing" constant="40" id="z9b-AM-LQa"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w51-JI-eqN" userLabel="Register Button">
-                                <rect key="frame" x="91" y="736.66666666666663" width="232" height="45"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w51-JI-eqN" userLabel="Register Button">
+                                <rect key="frame" x="80" y="737" width="255" height="45"/>
                                 <color key="backgroundColor" red="0.1223711148" green="0.29312255980000002" blue="0.59135049579999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="232" id="4iw-hk-7rX"/>
@@ -2871,13 +2875,6 @@
                                     <action selector="regButtonAction:" destination="8EM-Y1-wsV" eventType="touchUpInside" id="hxa-tp-CqF"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qVW-Qy-iXS" userLabel="Scan Image View">
-                                <rect key="frame" x="136" y="429" width="152" height="143"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="152" id="2dx-aX-8Jz"/>
-                                    <constraint firstAttribute="height" constant="143" id="dan-nJ-WAk"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -2885,7 +2882,6 @@
                             <constraint firstItem="YTd-CM-8XY" firstAttribute="leading" secondItem="P59-3D-Zpv" secondAttribute="leading" id="3ZP-6h-Rdx"/>
                             <constraint firstItem="YTd-CM-8XY" firstAttribute="top" secondItem="MPf-7Y-eq3" secondAttribute="bottom" constant="60" id="7vh-fc-ezL"/>
                             <constraint firstItem="P59-3D-Zpv" firstAttribute="trailing" secondItem="Mp5-2Y-j1q" secondAttribute="trailing" constant="20" id="B6q-bb-bHh"/>
-                            <constraint firstItem="qVW-Qy-iXS" firstAttribute="leading" secondItem="P59-3D-Zpv" secondAttribute="leading" constant="136" id="Cqf-L5-Zba"/>
                             <constraint firstItem="YTd-CM-8XY" firstAttribute="centerX" secondItem="X2U-4m-95J" secondAttribute="centerX" id="EbR-TD-BLK"/>
                             <constraint firstItem="irS-0y-Xb9" firstAttribute="top" secondItem="3kV-N7-kWp" secondAttribute="bottom" constant="17" id="JVc-Gj-90s"/>
                             <constraint firstItem="irS-0y-Xb9" firstAttribute="leading" secondItem="MPf-7Y-eq3" secondAttribute="leading" constant="20" id="L0x-wv-E0T"/>
@@ -2929,7 +2925,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GM5-nr-7on" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="786.39999999999998" y="1009.7451274362819"/>
+            <point key="canvasLocation" x="785.50724637681162" y="1009.1517857142857"/>
         </scene>
         <!--Поиск-->
         <scene sceneID="kKU-du-vHv">
