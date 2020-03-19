@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -386,44 +385,6 @@
             </objects>
             <point key="canvasLocation" x="1211.5942028985507" y="257.8125"/>
         </scene>
-        <!--Топ объявлений и новости-->
-        <scene sceneID="eiP-Op-6Om">
-            <objects>
-                <collectionViewController id="op5-Xb-iTj" customClass="MainPageViewController" customModule="FreeModel" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="HYL-EU-zZS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Yri-r7-MuZ">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="tyT-2n-xZL">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VK5-yJ-H0F">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </collectionViewCellContentView>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="op5-Xb-iTj" id="v7T-ar-aiA"/>
-                            <outlet property="delegate" destination="op5-Xb-iTj" id="psG-xO-lU7"/>
-                        </connections>
-                    </collectionView>
-                    <tabBarItem key="tabBarItem" title="Главная" image="flame" catalog="system" id="eJy-W2-7fy"/>
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Топ объявлений и новости" id="Xit-5V-vTm"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6kd-li-JqG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2838" y="-190"/>
-        </scene>
         <!--Search Tab-->
         <scene sceneID="KlI-hf-iRo">
             <objects>
@@ -432,30 +393,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B6L-u8-6AS">
-                                <rect key="frame" x="0.0" y="88" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="barTintColor" red="0.88270670179999999" green="0.90735048060000001" blue="0.98869794609999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dr0-kO-sU2">
-                                <rect key="frame" x="339" y="50" width="64" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Фильтры"/>
-                                <connections>
-                                    <action selector="filterButtonAction:" destination="r0l-NE-EK2" eventType="touchUpInside" id="cap-WK-rPc"/>
-                                </connections>
-                            </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Spr-gO-U6u">
-                                <rect key="frame" x="0.0" y="144" width="414" height="674"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Spr-gO-U6u">
+                                <rect key="frame" x="0.0" y="115" width="375" height="674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="674" id="Po3-3w-TFo"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="104" id="sPv-cj-KXI" customClass="PostCell" customModule="FreeModel" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="104"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="104"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="sPv-cj-KXI" id="tTH-e7-jUy">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="104"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f62-LJ-Tbi" userLabel="Post Image">
@@ -499,11 +448,35 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="B6L-u8-6AS">
+                                <rect key="frame" x="0.0" y="44" width="375" height="56"/>
+                                <color key="barTintColor" red="0.88270670179999999" green="0.90735048060000001" blue="0.98869794609999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="B6L-u8-6AS" firstAttribute="trailing" secondItem="zLh-5X-lQv" secondAttribute="trailing" id="AhK-aR-BXc"/>
+                            <constraint firstItem="B6L-u8-6AS" firstAttribute="leading" secondItem="zLh-5X-lQv" secondAttribute="leading" id="DeW-3x-eZv"/>
+                            <constraint firstItem="Spr-gO-U6u" firstAttribute="leading" secondItem="zLh-5X-lQv" secondAttribute="leading" id="dHd-q7-KNN"/>
+                            <constraint firstAttribute="trailing" secondItem="Spr-gO-U6u" secondAttribute="trailing" id="gbf-dn-jVG"/>
+                            <constraint firstItem="Spr-gO-U6u" firstAttribute="top" secondItem="B6L-u8-6AS" secondAttribute="bottom" constant="15" id="vjx-1j-el0"/>
+                            <constraint firstItem="B6L-u8-6AS" firstAttribute="top" secondItem="zLh-5X-lQv" secondAttribute="top" id="x5E-fb-18b"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="zLh-5X-lQv"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Поиск" image="magnifyingglass" catalog="system" id="xjs-BD-vdQ"/>
+                    <navigationItem key="navigationItem" id="Yms-q3-f5Z">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="e1q-6V-Rvu">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dr0-kO-sU2">
+                                <rect key="frame" x="295" y="7" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Фильтры"/>
+                                <connections>
+                                    <action selector="filterButtonAction:" destination="r0l-NE-EK2" eventType="touchUpInside" id="cap-WK-rPc"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="filterButtonOutlet" destination="dr0-kO-sU2" id="Vrc-MC-3Az"/>
                         <outlet property="searchResultsTableView" destination="Spr-gO-U6u" id="LA8-VX-ouo"/>
@@ -513,7 +486,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8vk-DC-ueN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2838" y="473"/>
+            <point key="canvasLocation" x="3776.8000000000002" y="472.71364317841085"/>
         </scene>
         <!--Filter View Controller-->
         <scene sceneID="JEm-LE-9hn">
@@ -829,7 +802,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="05N-Px-b5h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3602.898550724638" y="-225"/>
+            <point key="canvasLocation" x="4541.6000000000004" y="-225.33733133433284"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Sl8-Xi-c2j">
@@ -842,17 +815,16 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="op5-Xb-iTj" kind="relationship" relationship="viewControllers" id="Qyb-Pb-L5E"/>
-                        <segue destination="r0l-NE-EK2" kind="relationship" relationship="viewControllers" id="WTl-9B-gG2"/>
-                        <segue destination="0cy-7G-yPR" kind="relationship" relationship="viewControllers" id="vr8-6W-bzX"/>
-                        <segue destination="bhW-lX-Jss" kind="relationship" relationship="viewControllers" id="cjv-6q-FL9"/>
+                        <segue destination="7Un-ff-h59" kind="relationship" relationship="viewControllers" id="WTl-9B-gG2"/>
+                        <segue destination="ymr-P7-6HC" kind="relationship" relationship="viewControllers" id="vr8-6W-bzX"/>
+                        <segue destination="13V-AH-81e" kind="relationship" relationship="viewControllers" id="cjv-6q-FL9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KW5-uc-2m9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2067" y="258"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
         <scene sceneID="xVA-oK-D29">
             <objects>
                 <viewController id="0cy-7G-yPR" sceneMemberID="viewController">
@@ -912,11 +884,22 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="uG8-3n-fBA"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="oQq-nM-SOa"/>
+                    <navigationItem key="navigationItem" id="UZw-PY-CDz">
+                        <barButtonItem key="rightBarButtonItem" title="addNewButton" style="plain" id="Y5K-7v-pDC">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eHw-0S-6aB">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add new"/>
+                            </button>
+                            <connections>
+                                <segue destination="iRG-2N-6ew" kind="show" id="FQa-8s-MSS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ws0-HM-ZVP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2837.68115942029" y="1839.5089285714284"/>
+            <point key="canvasLocation" x="3776.8000000000002" y="1839.1304347826087"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fnb-DG-bUR">
@@ -1059,10 +1042,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="gGG-Ud-kBo"/>
                     </view>
+                    <navigationItem key="navigationItem" id="vJl-wa-Iem"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6K-KJ-SIe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3602.898550724638" y="1839.5089285714284"/>
+            <point key="canvasLocation" x="4541.6000000000004" y="1839.1304347826087"/>
         </scene>
         <!--Profile-->
         <scene sceneID="rsx-wl-Poh">
@@ -1162,9 +1146,11 @@
                                     <constraint firstAttribute="width" constant="233" id="Ywl-71-pXw"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="Угодник">
+                                    <fragment content="Максим">
                                         <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="18" name="GillSans-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -1177,7 +1163,7 @@
                                     <constraint firstAttribute="height" constant="21" id="uyJ-eB-sSf"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="Мамкин">
+                                    <fragment content="Мамонов">
                                         <attributes>
                                             <font key="NSFont" size="18" name="GillSans-Light"/>
                                         </attributes>
@@ -1192,9 +1178,10 @@
                                     <constraint firstAttribute="width" constant="233" id="sfK-bc-h2E"/>
                                 </constraints>
                                 <attributedString key="attributedText">
-                                    <fragment content="pidoras228">
+                                    <fragment content="innokentii_great">
                                         <attributes>
                                             <font key="NSFont" size="18" name="GillSans-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -1348,7 +1335,18 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gck-dA-6t8"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Профиль" image="person" catalog="system" id="URJ-bY-hff"/>
+                    <navigationItem key="navigationItem" id="Swa-Ch-enK">
+                        <barButtonItem key="rightBarButtonItem" title="editButton" style="plain" id="HQX-zJ-BZz">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2W0-Tv-BLK">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Edit"/>
+                            </button>
+                            <connections>
+                                <segue destination="Fou-aR-rO3" kind="show" id="BSJ-cI-mw1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="emailLabel" destination="QEg-VA-Adq" id="v1O-56-hbZ"/>
                         <outlet property="loginLabel" destination="1Or-JP-Fah" id="NCF-KG-Hw2"/>
@@ -1356,19 +1354,18 @@
                         <outlet property="passwordLabel" destination="uCh-QG-gpy" id="DX3-rp-Uzg"/>
                         <outlet property="phoneLabel" destination="ZYK-ht-Fh4" id="kRi-Ux-7Em"/>
                         <outlet property="surnameLabel" destination="BEg-1y-THo" id="u9r-2G-2Aq"/>
-                        <segue destination="Fou-aR-rO3" kind="presentation" identifier="goToEditPage" id="d4p-Ht-wc1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hjK-8G-3dU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2837.68115942029" y="1155.8035714285713"/>
+            <point key="canvasLocation" x="3776.8000000000002" y="1155.472263868066"/>
         </scene>
         <!-- Editing Profile View Controller-->
         <scene sceneID="4Ff-yd-OPn">
             <objects>
                 <viewController id="Fou-aR-rO3" userLabel=" Editing Profile View Controller" customClass="EditingProfileViewController" customModule="FreeModel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vyP-Pz-Twh">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AKX-cx-ZOc">
@@ -1592,14 +1589,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="liB-0v-4xN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3602.898550724638" y="1155.8035714285713"/>
+            <point key="canvasLocation" x="4541.6000000000004" y="1155.472263868066"/>
         </scene>
         <!--Categories View Controller-->
         <scene sceneID="fc0-7B-4FF">
             <objects>
                 <viewController id="W0b-Gj-2cY" userLabel="Categories View Controller" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tXj-BX-eP0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Маникюр.png" translatesAutoresizingMaskIntoConstraints="NO" id="4cE-pj-Kz8">
@@ -1843,7 +1840,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wwx-nJ-zcs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4429" y="1156"/>
+            <point key="canvasLocation" x="5367.1999999999998" y="1155.472263868066"/>
         </scene>
         <!--AdView Controller-->
         <scene sceneID="L49-Z8-vr2">
@@ -1881,7 +1878,7 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="69 минут" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZI-US-alJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60 минут" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZI-US-alJ">
                                 <rect key="frame" x="169" y="596" width="203" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="18"/>
@@ -1899,15 +1896,17 @@
                                 <rect key="frame" x="169" y="516" width="203" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="04:20">
+                                    <fragment content="16:20">
                                         <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <font key="NSFont" size="18" name="GillSans-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="улица Членов, 69" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6j1-ud-JJ6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="улица Безрукова, 6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6j1-ud-JJ6">
                                 <rect key="frame" x="169" y="551" width="203" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="18"/>
@@ -2023,7 +2022,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oXj-bB-5Zx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3602.898550724638" y="472.76785714285711"/>
+            <point key="canvasLocation" x="4541.6000000000004" y="472.71364317841085"/>
         </scene>
         <!--Form View Controller-->
         <scene sceneID="Xle-hL-Ls2">
@@ -2174,7 +2173,7 @@
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <state key="normal" title="Button" image="square" catalog="system"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="69 минут" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqH-RP-4X2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="60 минут" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rqH-RP-4X2">
                                 <rect key="frame" x="161" y="561" width="195" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="18"/>
@@ -2192,15 +2191,16 @@
                                 <rect key="frame" x="161" y="481" width="195" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="04:20">
+                                    <fragment content="16:20">
                                         <attributes>
                                             <font key="NSFont" size="18" name="GillSans-Light"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="улица Членов, 69" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGZ-VG-vr2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="улица Безрукова, 6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGZ-VG-vr2">
                                 <rect key="frame" x="161" y="516" width="195" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans-Light" family="Gill Sans" pointSize="18"/>
@@ -2291,7 +2291,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cpp-nH-5hz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4429" y="473"/>
+            <point key="canvasLocation" x="5367.1999999999998" y="472.71364317841085"/>
         </scene>
         <!--Master Page View Controller-->
         <scene sceneID="PNa-YT-FgY">
@@ -2489,7 +2489,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JZj-Cp-fw0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4428.985507246377" y="-225"/>
+            <point key="canvasLocation" x="5367.1999999999998" y="-225.33733133433284"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aJi-pB-dWU">
@@ -2852,11 +2852,67 @@
             </objects>
             <point key="canvasLocation" x="786.39999999999998" y="1009.7451274362819"/>
         </scene>
+        <!--Поиск-->
+        <scene sceneID="tNn-dv-aD1">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Un-ff-h59" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Поиск" image="magnifyingglass" catalog="system" id="xjs-BD-vdQ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YbJ-i4-ant">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="r0l-NE-EK2" kind="relationship" relationship="rootViewController" id="6D9-Aq-HRJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oiT-Kv-xqk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2884" y="294"/>
+        </scene>
+        <!--Профиль-->
+        <scene sceneID="8hf-ih-px3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="13V-AH-81e" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Профиль" image="person" catalog="system" id="URJ-bY-hff"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MXR-l8-rtn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bhW-lX-Jss" kind="relationship" relationship="rootViewController" id="fEH-m1-XCx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LdR-vs-wg4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2794" y="1155"/>
+        </scene>
+        <!--Публикации-->
+        <scene sceneID="4ep-uC-hwe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ymr-P7-6HC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Публикации" id="oQq-nM-SOa"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uhQ-sm-d6v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="0cy-7G-yPR" kind="relationship" relationship="rootViewController" id="xJB-NH-nPN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tgM-SP-gid" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2031" y="1839"/>
+        </scene>
     </scenes>
     <resources>
         <image name="accountphoto.png" width="782" height="727"/>
         <image name="eye.slash" catalog="system" width="64" height="42"/>
-        <image name="flame" catalog="system" width="54" height="64"/>
         <image name="magnifyingglass" catalog="system" width="64" height="56"/>
         <image name="person" catalog="system" width="64" height="58"/>
         <image name="square" catalog="system" width="64" height="56"/>
